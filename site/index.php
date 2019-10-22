@@ -24,6 +24,10 @@ try
             case "showHome":
             $home->showHome();
             break;
+
+            case "showPresentation":
+            $home->showPresentation();
+            break;
         }
     }
 }

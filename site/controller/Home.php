@@ -6,5 +6,10 @@ class Home
     {
         require(VIEW.'home.php');
     }
+
+    public function showPresentation()
+    {
+        require(VIEW.'presentation.php');
+    }
 }
 
