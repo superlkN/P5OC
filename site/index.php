@@ -28,6 +28,14 @@ try
             case "showPresentation":
             $home->showPresentation();
             break;
+
+            case "showContact":
+            $home->showContact();
+            break;
+
+            case "showPortfolio":
+            $home->showPortfolio();
+            break;
         }
     }
 }
@@ -36,3 +44,6 @@ catch(Exception $e)
 {
     echo 'Erreur : ' . $e->getMessage();
 }
+
+?>
+

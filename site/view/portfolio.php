@@ -1,4 +1,4 @@
-<?php $title = 'Présentation'; ?>
+<?php $title = 'Réalisations'; ?>
 
 <?php ob_start(); ?>
 
@@ -15,20 +15,12 @@
             </div>
     </header>
 
-    <section id="slider">
-            <img width="800" height="600" id="imgSlider" src="assets/img/velo-lyon.jpg" alt="images_lyon">
-            <div class="boutons-slider">
-                <a class="fas fa-backward" id="fleche-gauche"></a>
-                <a class="fas fa-forward" id="fleche-droite"></a>
-                <a id="bouton-pause" class="bouton">❚❚</a>
-            </div>
-    </section>
-
-    <h1> Presentation : </h1>
-
-    <p> Société à responsabilité limitée unipersonnelle est active depuis 2013.
-    Établie à CREVIN (35320), elle est spécialisée dans le secteur d'activité des travaux de menuiserie bois et pvc. Son effectif est compris entre 3 et 4 salariés.
-    </p>
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Nos réalisations :</h1>
+        <p class="lead">Société à responsabilité limitée unipersonnelle est active depuis 2013.
+            Établie à CREVIN (35320), elle est spécialisée dans le secteur d'activité des travaux de menuiserie bois et pvc. Son effectif est compris entre 3 et 4 salariés.
+        </p>
+    </main>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
@@ -36,9 +28,6 @@
         </div>
     </footer>
 </div>
-
-<script src="assets/js/slider.js"></script>
-
 
 <?php $content = ob_get_clean(); ?>
 

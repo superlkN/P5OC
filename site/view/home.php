@@ -2,9 +2,34 @@
 
 <?php ob_start(); ?>
 
-<div class="home">
-    <h1 class="titre-home"> Menuiserie Quellard </h1>
-    <a class="bouton-home" href="index.php?action=showPresentation"> En savoir plus </a>
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Menuiserie Quellard</h3>
+          <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="index.php?action=showHome">Accueil</a>
+                <a class="nav-link active" href="index.php?action=showPresentation">Présentations</a>
+                <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
+                <a class="nav-link active" href="index.php?action=showContact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Bienvenue sur notre site web</h1>
+        <p class="lead">Société à responsabilité limitée unipersonnelle est active depuis 2013.
+            Établie à CREVIN (35320), elle est spécialisée dans le secteur d'activité des travaux de menuiserie bois et pvc. Son effectif est compris entre 3 et 4 salariés.
+        </p>
+        <p class="lead">
+          <a href="index.php?action=showPresentation" class="btn btn-lg btn-secondary">En apprendre plus</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Copyright 2019</p>
+        </div>
+      </footer>
 </div>
 
 

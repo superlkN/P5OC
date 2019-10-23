@@ -11,5 +11,15 @@ class Home
     {
         require(VIEW.'presentation.php');
     }
+
+    public function showContact()
+    {
+        require(VIEW.'contact.php');
+    }
+
+    public function showPortfolio()
+    {
+        require(VIEW.'portfolio.php');
+    }
 }
 
