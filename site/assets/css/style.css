@@ -44,7 +44,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 75em;
 }
 
 
@@ -167,6 +167,9 @@ input[type=submit]:hover {
   margin-top: 70px;
 }
 
+#imgSlider {
+  width: 75em;
+}
 .presentation {
   margin-top: 100px;
   margin-bottom: 200px;

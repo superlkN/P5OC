@@ -15,15 +15,6 @@
             </div>
     </header>
 
-    <section id="slider">
-            <img width="800" height="600" id="imgSlider" src="assets/img/velo-lyon.jpg" alt="images_lyon">
-            <div class="boutons-slider">
-                <a class="fas fa-backward" id="fleche-gauche"></a>
-                <a class="fas fa-forward" id="fleche-droite"></a>
-                <a id="bouton-pause" class="bouton">❚❚</a>
-            </div>
-    </section>
-
     <div class="presentation">
         <h1> Presentation : </h1>
 
@@ -43,11 +34,8 @@
             <h4 class="lead"> E-mail : </h4>
             <p> blablabla@gmail.com </p>
         </div>
-</footer>
+    </footer>
 </div>
-
-<script src="assets/js/slider.js"></script>
-
 
 <?php $content = ob_get_clean(); ?>
 
