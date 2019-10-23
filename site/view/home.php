@@ -26,9 +26,16 @@
       </main>
 
       <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Copyright 2019</p>
-        </div>
+          <div class="inner">
+            <h4 class="lead"> Horaires d'ouverture : </h4>
+            <p> Lundi - Vendredi 9:00 - 19:00 </p>
+
+            <h4 class="lead"> Appellez-nous : </h4>
+            <p> 02 99 42 41 83 </p>
+
+            <h4 class="lead"> E-mail : </h4>
+            <p> blablabla@gmail.com </p>
+          </div>
       </footer>
 </div>
 

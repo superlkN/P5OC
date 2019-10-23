@@ -24,17 +24,26 @@
             </div>
     </section>
 
-    <h1> Presentation : </h1>
+    <div class="presentation">
+        <h1> Presentation : </h1>
 
-    <p> Société à responsabilité limitée unipersonnelle est active depuis 2013.
-    Établie à CREVIN (35320), elle est spécialisée dans le secteur d'activité des travaux de menuiserie bois et pvc. Son effectif est compris entre 3 et 4 salariés.
-    </p>
+        <p> Société à responsabilité limitée unipersonnelle est active depuis 2013.
+        Établie à CREVIN (35320), elle est spécialisée dans le secteur d'activité des travaux de menuiserie bois et pvc. Son effectif est compris entre 3 et 4 salariés.
+        </p>
+    </div>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Copyright 2019</p>
+            <h4 class="lead"> Horaires d'ouverture : </h4>
+            <p> Lundi - Vendredi 9:00 - 19:00 </p>
+
+            <h4 class="lead"> Appellez-nous : </h4>
+            <p> 02 99 42 41 83 </p>
+
+            <h4 class="lead"> E-mail : </h4>
+            <p> blablabla@gmail.com </p>
         </div>
-    </footer>
+</footer>
 </div>
 
 <script src="assets/js/slider.js"></script>
