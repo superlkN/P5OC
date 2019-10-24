@@ -5,7 +5,7 @@
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Menuiserie Quellard</h3>
+          <h1 class="masthead-brand">Menuiserie Quellard</h1>
           <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link active" href="index.php?action=showHome">Accueil</a>
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentations</a>
@@ -15,43 +15,54 @@
         </div>
       </header>
 
-<main role="main" class="inner cover">
+      <i class="fas fa-sign-in-alt"></i>
 
-<div class="container">
-  <h3>Contactez nous :</h3>
-  <form action="/action_page.php">
-    <label for="fname">Prénom</label>
-    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom..">
+      <main role="main" class="inner cover">
 
-    <label for="lname">Nom</label>
-    <input type="text" id="nom" name="nom" placeholder="Votre nom..">
+      <div class="container">
+        <h2>Contactez nous :</h2>
+        <form action="/action_page.php">
+          <label for="fname">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom..">
 
-    <label for="mail">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="Votre adresse e-mail">
+          <label for="lname">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom..">
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Ecrivez nous quelque chose.." style="height:200px"></textarea>
+          <label for="mail">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Votre adresse e-mail">
 
-    <input type="submit" value="Submit">
-  </form>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Ecrivez nous quelque chose.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <h2> Où nous trouver ?</h2>
+
+      <div id="map" class="map"></div>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+          <div class="inner">
+              <h4 class="lead"> Adresse : </h4>
+              <p> 9 RUE DU CHAMP GUIHORE 35320 CREVIN </p>
+
+              <h4 class="lead"> Horaires d'ouverture : </h4>
+              <p> Lundi - Vendredi 9:00 - 19:00 </p>
+
+              <h4 class="lead"> Appellez-nous : </h4>
+              <p> 02 99 42 41 83 </p>
+
+              <h4 class="lead"> E-mail : </h4>
+              <p> blablabla@gmail.com </p>
+          </div>
+      </footer>
 </div>
 
-</main>
-
-<footer class="mastfoot mt-auto">
-    <div class="inner">
-        <h4 class="lead"> Horaires d'ouverture : </h4>
-        <p> Lundi - Vendredi 9:00 - 19:00 </p>
-
-        <h4 class="lead"> Appellez-nous : </h4>
-        <p> 02 99 42 41 83 </p>
-
-        <h4 class="lead"> E-mail : </h4>
-        <p> blablabla@gmail.com </p>
-    </div>
-</footer>
-
-</div>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+<script src="assets/js/map.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 
