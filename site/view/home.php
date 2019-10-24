@@ -16,7 +16,7 @@
             
             </div>
     </header>
-    
+
     <i class="fas fa-sign-in-alt"></i>
 
     <section id="slider">
@@ -51,7 +51,7 @@
             <p> 02 23 30 92 60 </p>
 
             <h4 class="lead"> E-mail : </h4>
-            <p> blablabla@gmail.com </p>
+            <p> joel.quellard@sfr.fr </p>
         </div>
     </footer>
 </div>

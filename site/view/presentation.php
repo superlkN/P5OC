@@ -42,7 +42,7 @@
             <p> 02 99 42 41 83 </p>
 
             <h4 class="lead"> E-mail : </h4>
-            <p> blablabla@gmail.com </p>
+            <p> joel.quellard@sfr.fr </p>
         </div>
     </footer>
 </div>
