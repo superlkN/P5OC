@@ -36,6 +36,10 @@ try
             case "showPortfolio":
             $home->showPortfolio();
             break;
+
+            case "showGalerie":
+            $home->showGalerie();
+            break;
         }
     }
 }

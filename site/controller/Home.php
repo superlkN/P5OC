@@ -21,5 +21,10 @@ class Home
     {
         require(VIEW.'portfolio.php');
     }
+
+    public function showGalerie()
+    {
+        require(VIEW.'galerie.php');
+    }
 }
 

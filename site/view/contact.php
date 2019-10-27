@@ -8,18 +8,16 @@
           <h1 class="masthead-brand">Menuiserie Quellard</h1>
           <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link active" href="index.php?action=showHome">Accueil</a>
-                <a class="nav-link active" href="index.php?action=showPresentation">Présentations</a>
+                <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
           </nav>
         </div>
       </header>
 
-      <i class="fas fa-sign-in-alt"></i>
-
       <main role="main" class="inner cover">
 
-      <div class="container">
+      <div class="container2">
         <h2>Contactez nous :</h2>
         <form action="/action_page.php">
           <label for="fname">Prénom</label>
@@ -58,7 +56,8 @@
               <h4 class="lead"> E-mail : </h4>
               <p> joel.quellard@sfr.fr </p>
           </div>
-      </footer>
+          <a class="bouton-connect" href=""><i class="fas fa-sign-in-alt"></i></a>
+      </footer> 
 </div>
 
 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>

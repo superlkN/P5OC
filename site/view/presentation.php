@@ -8,14 +8,12 @@
             <h1 class="masthead-brand">Menuiserie Quellard</h1>
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link active" href="index.php?action=showHome">Accueil</a>
-                <a class="nav-link active" href="index.php?action=showPresentation">Présentations</a>
+                <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
             </nav>
             </div>
     </header>
-
-    <i class="fas fa-sign-in-alt"></i>
 
     <div class="presentation">
         <h2> Presentation : </h2>
@@ -44,6 +42,7 @@
             <h4 class="lead"> E-mail : </h4>
             <p> joel.quellard@sfr.fr </p>
         </div>
+        <a class="bouton-connect" href=""><i class="fas fa-sign-in-alt"></i></a>
     </footer>
 </div>
 
