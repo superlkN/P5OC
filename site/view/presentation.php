@@ -22,12 +22,10 @@
 
     <h2> Presentation : </h2>
 
-    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+    <iframe width="1200px" height="500px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 
-    <p> La Menuiserie Quellard a été crée en 2013 par Mr Quellard Joel. <br>
-        Spécialisé dans la menuiserie depuis 30 ans, <br>
-        Mr Quellard est à votre service pour tous vos travaux de menuiseries extérieures et intérieures, placards, ainsi que l'isolation et le placoplatre. <br>
-        L'entreprise est qualifiée RGE. <br>
+    <p> 
+        <?= $text2['content'] ?>
         <img class="logorge" width="100" height="100" src="assets/img/rge.png">
     </p>
 

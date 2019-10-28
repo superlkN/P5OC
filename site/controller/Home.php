@@ -1,14 +1,22 @@
 <?php 
 
+require_once(MODEL.'TextManager.php'); 
+
 class Home 
 {
     public function showHome()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $text1 = $textManager->getText1();
+
         require(VIEW.'home.php');
     }
 
     public function showPresentation()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $text2 = $textManager->getText2();
+
         require(VIEW.'presentation.php');
     }
 

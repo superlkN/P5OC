@@ -2,7 +2,6 @@
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -22,7 +21,7 @@
     </header>
 
     <div style="text-align:center">
-        <h2>Nos prestations :</h2>
+        <h2 class="titrePres">Portfolio :</h2>
         <p>Cliquez sur une image si dessous:</p>
         </div>
 
