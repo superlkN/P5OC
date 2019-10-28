@@ -1,7 +1,10 @@
 <?php
 
+session_start();
+
 include_once('config.php');
 require_once(CONTROLLER.'Home.php');
+require_once(CONTROLLER.'UserController.php');
 
 try 
 {
@@ -18,6 +21,7 @@ try
     if(isset($action))
     {
         $home = new Home;
+        $user = new UserController;
 
         switch ($action)
         {
@@ -39,6 +43,42 @@ try
 
             case "showGalerie":
             $home->showGalerie();
+            break;
+            
+            case "showLogin":
+            $user->showLogin();
+            break;
+
+            case "login":
+            if (isset($_POST['formconnexion'])) {
+                $user->checklogin($_POST['mailconnect']);
+            }
+            break;
+
+            case "showInscription":
+            $user->showInscription();
+            break;
+
+            case "logout":
+            $user->logout();
+            break;
+
+            case "inscription":
+            if (isset($_POST['forminscription'])) {
+                $user->inscription($_POST['pseudo'], $_POST['mail'], $_POST['mdp']);
+            }
+            break;
+
+            case "showDash":
+            $user->showDash();
+            break;
+
+            case "dashboard":
+            $user->dashboard($_GET['id']);
+            break;
+
+            case "formEmail":
+            $user->formEmail();
             break;
         }
     }

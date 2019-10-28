@@ -1,7 +1,7 @@
 <?php $title = 'Contact'; ?>
 
 <?php ob_start(); ?>
-
+<img class="logo" width="100" height="100" src="assets/img/logo.png">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
@@ -11,6 +11,9 @@
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
+                <?php if (isset($_SESSION['id'])) { ?>
+                <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
+                <?php } ?>
           </nav>
         </div>
       </header>
@@ -19,20 +22,20 @@
 
       <div class="container2">
         <h2>Contactez nous :</h2>
-        <form action="/action_page.php">
-          <label for="fname">Prénom</label>
-          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom..">
-
-          <label for="lname">Nom</label>
-          <input type="text" id="nom" name="nom" placeholder="Votre nom..">
-
-          <label for="mail">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Votre adresse e-mail">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Ecrivez nous quelque chose.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
+        <form method="post" action="index.php?action=formEmail">
+            <label for="name">Nom:</label>
+            <input type="text" name="name" id="name" required placeholder="Nom" />
+          
+            <label for="subject">Objet Du Message:</label>
+            <input type="text" name="subject" id="subject" required placeholder="Sujet" />
+          
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="email@exemple.com" />
+          
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+          
+            <input type="submit" value="Envoyer Mon Message" />
         </form>
       </div>
 
@@ -56,7 +59,6 @@
               <h4 class="lead"> E-mail : </h4>
               <p> joel.quellard@sfr.fr </p>
           </div>
-          <a class="bouton-connect" href=""><i class="fas fa-sign-in-alt"></i></a>
       </footer> 
 </div>
 

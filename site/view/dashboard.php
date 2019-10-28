@@ -1,11 +1,10 @@
-<?php $title = 'Menuiserie Quellard'; ?>
+<?php $title = 'Présentation'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
-            
             <h1 class="masthead-brand">Menuiserie Quellard</h1>
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link active" href="index.php?action=showHome">Accueil</a>
@@ -16,28 +15,10 @@
                 <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
                 <?php } ?>
             </nav>
-            
             </div>
-</header>
+    </header>
 
-    <section id="slider">
-            <img width="800" height="600" id="imgSlider" src="assets/img/velo-lyon.jpg" alt="images_lyon">
-            <div class="boutons-slider">
-                <a class="fas fa-backward fa-2x" id="fleche-gauche"></a>
-                <a class="fas fa-forward fa-2x" id="fleche-droite"></a>
-            </div>
-    </section>
-
-    <div class="presentation">
-        <h2> Bienvenue sur notre site web : </h2>
-
-        <p> Société à responsabilité limitée unipersonnelle est active depuis 2013.
-        Établie à CREVIN (35320), elle est spécialisée dans le secteur d'activité des travaux de menuiserie bois et pvc. Son effectif est compris entre 3 et 4 salariés.
-        </p>
-        <p class="lead">
-          <a href="index.php?action=showPresentation" class="btn btn-lg btn-secondary">En apprendre plus</a>
-        </p>
-    </div>
+    <p> yo </p>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
@@ -48,22 +29,13 @@
             <p> Lundi - Vendredi 9:00 - 19:00 </p>
 
             <h4 class="lead"> Appellez-nous : </h4>
-            <p> 02 23 30 92 60 </p>
+            <p> 02 99 42 41 83 </p>
 
             <h4 class="lead"> E-mail : </h4>
             <p> joel.quellard@sfr.fr </p>
         </div>
-        <?php if (!isset($_SESSION['id'])) { ?>
-        <a class="bouton-connect" href="index.php?action=showLogin"><i class="fas fa-sign-in-alt"></i></a>
-        <a class="bouton-inscription" href="index.php?action=showInscription"><i class="far fa-edit"></i></a>
-        <?php } ?>
-        <?php if (isset($_SESSION['id'])) { ?>
-        <a class="bouton-logout" href="index.php?action=logout"><i class="fas fa-sign-out-alt"></i></a>
-        <?php } ?>
     </footer>
 </div>
-
-<script src="assets/js/slider.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

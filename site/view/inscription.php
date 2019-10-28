@@ -11,26 +11,28 @@
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
-                <?php if (isset($_SESSION['id']) && $_SESSION['isadmin'] == 1) { ?>
-                <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
-                <?php } ?>
             </nav>
             </div>
     </header>
 
-    <div class="presentation">
-
-    <h2> Presentation : </h2>
-
-    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
-
-    <p> La Menuiserie Quellard a été crée en 2013 par Mr Quellard Joel. <br>
-        Spécialisé dans la menuiserie depuis 30 ans, <br>
-        Mr Quellard est à votre service pour tous vos travaux de menuiseries extérieures et intérieures, placards, ainsi que l'isolation et le placoplatre. <br>
-        L'entreprise est qualifiée RGE. <br>
-        <img class="logorge" width="100" height="100" src="assets/img/rge.png">
-    </p>
-
+    <div class="container2 inscription" align="center">
+        <h2 class="titreInscription">Inscription</h2>
+        <div class="formInscription">
+            <form  method="POST" action="index.php?action=inscription">   
+                <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo"/>
+                     
+                <input type="email" placeholder="Votre mail" id="mail" name="mail"/>
+                        
+                <input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2"/>           
+                    
+                <input type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />                                  
+                    
+                <input type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
+                    
+                <br />
+                <input class="button1" type="submit" name="forminscription" value="Je m'inscris" />
+            </form>
+        </div>
     </div>
 
     <footer class="mastfoot mt-auto">
@@ -53,3 +55,4 @@
 <?php $content = ob_get_clean(); ?>
 
 <?php require(VIEW.'template.php'); ?>
+

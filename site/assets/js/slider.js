@@ -17,7 +17,6 @@ class Slider {
         this.nextImg.addEventListener("click", this.imageSuivante.bind(this));
         this.prevImg.addEventListener("click", this.imagePrecedente.bind(this));
         this.register();
-        this.pause.addEventListener("click", this.initPause);
     }
 
     afficherSlide() {
@@ -57,26 +56,6 @@ class Slider {
 
         clearTimeout(this.timer);
         this.timer = setTimeout(this.imageSuivante.bind(this), this.time);
-    }
-
-    pauseSlider() {
-        this.pause.innerHTML = "▶";
-        this.playing = false;
-        clearTimeout(this.timer);
-    }
-
-    playSlider() {
-        this.pause.innerHTML = "❚❚";
-        this.playing = true;
-        this.timer = setTimeout(this.imageSuivante.bind(this), this.time);
-    }
-
-    initPause() {
-        if (slider.playing) {
-            slider.pauseSlider();
-        } else {
-            slider.playSlider();
-        }
     }
 
     register() {

@@ -1,7 +1,7 @@
 <?php $title = 'Menuiserie Quellard'; ?>
 
 <?php ob_start(); ?>
-
+<img class="logo" width="100" height="100" src="assets/img/logo.png">
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
@@ -13,6 +13,9 @@
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
+                <?php if (isset($_SESSION['id'])) { ?>
+                <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
+                <?php } ?>
             </nav>
             
             </div>
@@ -25,18 +28,42 @@
 
         <!-- The four columns -->
         <div class="row">
-        <div class="column">
+            <div class="column">
+                <img src="assets/img/velo-lyon.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
             <img src="assets/img/velo-lyon.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-        </div>
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
         </div>
 
         <div class="container">
@@ -60,7 +87,6 @@
             <h4 class="lead"> E-mail : </h4>
             <p> joel.quellard@sfr.fr </p>
         </div>
-        <a class="bouton-connect" href=""><i class="fas fa-sign-in-alt"></i></a>
     </footer>
 </div>
 

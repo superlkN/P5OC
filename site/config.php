@@ -16,3 +16,10 @@ define('VIEW', ROOT.'view/');
 define('MODEL', ROOT.'model/');
 
 define('ASSETS', HOST.'assets/css/');
+
+define("DBDRIVER", "mysql");
+define("DBHOST", "localhost");
+define("DBNAME", "P5OC");
+define("DBCHARSET", "utf8");
+define("DBUSER", "root");
+define("DBPASSWD", "");

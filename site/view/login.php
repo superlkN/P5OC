@@ -1,4 +1,4 @@
-<?php $title = 'Présentation'; ?>
+<?php $title = 'Login'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
@@ -11,26 +11,19 @@
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
-                <?php if (isset($_SESSION['id']) && $_SESSION['isadmin'] == 1) { ?>
-                <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
-                <?php } ?>
             </nav>
             </div>
     </header>
-
-    <div class="presentation">
-
-    <h2> Presentation : </h2>
-
-    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
-
-    <p> La Menuiserie Quellard a été crée en 2013 par Mr Quellard Joel. <br>
-        Spécialisé dans la menuiserie depuis 30 ans, <br>
-        Mr Quellard est à votre service pour tous vos travaux de menuiseries extérieures et intérieures, placards, ainsi que l'isolation et le placoplatre. <br>
-        L'entreprise est qualifiée RGE. <br>
-        <img class="logorge" width="100" height="100" src="assets/img/rge.png">
-    </p>
-
+      
+    <div class="container2 connexion" align="center">
+        <h2 class="titreLogin">Connexion</h2>
+        <br /><br />
+        <form method="POST" action="index.php?action=login">
+        <input type="email" name="mailconnect" placeholder="Mail" />
+        <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+        <br /><br />
+        <input class="button1" type="submit" name="formconnexion" value="Se connecter !" />
+        </form>
     </div>
 
     <footer class="mastfoot mt-auto">
