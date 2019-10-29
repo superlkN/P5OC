@@ -21,16 +21,16 @@ class Slider {
 
     afficherSlide() {
         this.slide[0] = {
-            images: 'assets/img/velo-lyon.jpg',
+            images: 'assets/img/5.jpg',
         }
         this.slide[1] = {
-            'images': 'assets/img/velo-lyon2.jpg',
+            'images': 'assets/img/7.jpg',
         }
         this.slide[2] = {
-            'images': 'assets/img/velo-lyon3.jpg',
+            'images': 'assets/img/1.jpg',
         }
         this.slide[3] = {
-            'images': 'assets/img/velo-lyon4.jpg',
+            'images': 'assets/img/4.jpg',
         }
     }
 

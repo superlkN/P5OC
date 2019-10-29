@@ -23,52 +23,41 @@
     <div style="text-align:center">
         <h2 class="titrePres">Portfolio :</h2>
         <p>Cliquez sur une image si dessous:</p>
-        </div>
+    </div>
 
         <!-- The four columns -->
         <div class="row">
             <div class="column">
-                <img src="assets/img/velo-lyon.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/5.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/6.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/7.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-            <img src="assets/img/velo-lyon.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/velo-lyon2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/velo-lyon3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/velo-lyon4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                <img src="assets/img/8.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
             </div>
         </div>
 
         <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:80%">
+            <div id="imgtext">
+        </div>
 </div>
 
 

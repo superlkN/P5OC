@@ -24,4 +24,12 @@ class TextManager extends Manager
 
         return $text2;
     }
+
+    public function getTexts() {
+        $db = $this->dbConnect();
+        $req = $db->prepare('SELECT id, content FROM texte ORDER BY id');
+        $req->execute();
+
+        return $req;
+    }
 }
