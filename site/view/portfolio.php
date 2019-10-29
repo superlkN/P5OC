@@ -25,40 +25,43 @@
         <p>Cliquez sur une image si dessous:</p>
     </div>
 
-        <!-- The four columns -->
-        <div class="row">
-            <div class="column">
-                <img src="assets/img/1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/5.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/6.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/7.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="assets/img/8.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-            </div>
-        </div>
+    <div id="lightgallery" class="portfolio">
+        <a href="assets/img/1.jpg">
+            <img class="imgPortfolio" src="assets/img/1-bis.jpg" />
+        </a>
 
-        <div class="container">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg" style="width:80%">
-            <div id="imgtext">
-        </div>
-</div>
+        <a href="assets/img/2.jpg">
+            <img class="imgPortfolio" src="assets/img/2-bis.jpg" />
+        </a>
+
+        <a href="assets/img/3.jpg">
+            <img class="imgPortfolio" src="assets/img/3-bis.jpg" />
+        </a>
+
+        <a href="assets/img/4.jpg">
+            <img class="imgPortfolio" src="assets/img/4-bis.jpg" />
+        </a>
+
+        <a href="assets/img/5.jpg">
+            <img class="imgPortfolio" src="assets/img/5-bis.jpg" />
+        </a>
+
+        <a href="assets/img/6.jpg">
+            <img class="imgPortfolio" src="assets/img/6-bis.jpg" />
+        </a>
+
+        <a href="assets/img/7.jpg">
+            <img class="imgPortfolio" src="assets/img/7-bis.jpg" />
+        </a>
+
+        <a href="assets/img/8.jpg">
+            <img class="imgPortfolio" src="assets/img/8-bis.jpg" />
+        </a>
+
+        <a href="assets/img/9.jpg">
+            <img class="imgPortfolio" src="assets/img/9-bis.jpg" />
+        </a>
+    </div>
 
 
     <footer class="mastfoot mt-auto">
@@ -77,6 +80,12 @@
         </div>
     </footer>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+    });
+</script>
 
 <script src="assets/js/portfolio.js"></script>
 

@@ -49,6 +49,12 @@
             <h4 class="lead"> E-mail : </h4>
             <p> joel.quellard@sfr.fr </p>
         </div>
+        <?php if (!isset($_SESSION['id'])) { ?>
+        <a class="bouton-connect" href="index.php?action=showLogin"><i class="fas fa-sign-in-alt"></i></a>
+        <?php } ?>
+        <?php if (isset($_SESSION['id'])) { ?>
+        <a class="bouton-logout" href="index.php?action=logout"><i class="fas fa-sign-out-alt"></i></a>
+        <?php } ?>
     </footer>
 </div>
 

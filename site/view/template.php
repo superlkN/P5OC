@@ -8,8 +8,14 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+        <link type="text/css" rel="stylesheet" href="<?php echo ASSETS;?>lightGallery.css" />
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets/lib/lightgallery.min.js"></script>
+        <script src="assets/lib/lg-thumbnail.min.js"></script>
+        <script src="assets/lib/lg-fullscreen.min.js"></script>
         <link href="<?php echo ASSETS;?>style.css" rel="stylesheet" />
+         
     </head>
         
     <body>

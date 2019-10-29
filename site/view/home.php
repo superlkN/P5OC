@@ -21,7 +21,7 @@
 </header>
 
     <section id="slider">
-            <img width="800" height="600" id="imgSlider" src="assets/img/velo-lyon.jpg" alt="images_lyon">
+            <img id="imgSlider" src="assets/img/1.jpg" alt="images_entreprise">
             <div class="boutons-slider">
                 <a class="fas fa-backward fa-2x" id="fleche-gauche"></a>
                 <a class="fas fa-forward fa-2x" id="fleche-droite"></a>
