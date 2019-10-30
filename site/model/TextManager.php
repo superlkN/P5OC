@@ -32,4 +32,33 @@ class TextManager extends Manager
 
         return $req;
     }
+
+    /**
+     *  Met à jour un chapitre dans la bdd
+     * 
+     * @param String $title titre du chapitre
+     * @param String $content contenu du chapitre
+     * @param int $id identifiant de l'entité
+     * 
+     * @return array return le titre, le contenu, et l'id 
+     * 
+     */
+
+    public function editText1($content) 
+    {
+        $db = $this->dbConnect();
+        $text1 = $db->prepare('UPDATE texte SET content = ? WHERE id = 1');
+        $affectedText = $text1->execute(array($content));
+
+        return $affectedText;
+    }
+
+    public function editText2($content) 
+    {
+        $db = $this->dbConnect();
+        $text2 = $db->prepare('UPDATE texte SET content = ? WHERE id = 2');
+        $affectedText = $text2->execute(array($content));
+
+        return $affectedText;
+    }
 }

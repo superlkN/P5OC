@@ -145,6 +145,10 @@ class UserController
 
         if ($_SESSION['isadmin'] == 1)
         {
+            $textManager = new P5OC\site\Model\TextManager();
+            $text1 = $textManager->getText1();
+            $text2 = $textManager->getText2();
+
             require(VIEW.'dashboard.php');
         } 
         else 
@@ -161,7 +165,7 @@ class UserController
 
     public function dashboard($getid) 
     {
-        $authManager = new P4OC\site\Model\AuthManager();
+        $authManager = new P5OC\site\Model\AuthManager();
         
         if(isset($_GET['id']) && $_GET['id'] > 0) {
             $getid = intval($_GET['id']);
@@ -194,5 +198,53 @@ class UserController
             echo '<script languag="javascript">alert("Votre message n\'a pas pu être envoyé");</script>';
         }
         header('refresh:3;url=index.php?action=showContact');
+    }
+
+    /**
+     *  Affiche le vue d'edition du text 1 et 2
+     * 
+     */
+
+    public function viewText1()
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $text1 = $textManager->getText1();
+
+        require(VIEW.'editText1.php');
+    }
+
+    public function viewText2()
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $text2 = $textManager->getText2();
+
+        require(VIEW.'editText2.php');
+    }
+
+    /**
+     *  Modifie le text 1 et 2
+     * 
+     */
+
+    public function modifyText1($content)
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+      
+        $affectedText = $textManager->editText1($content);
+
+        header('Location:index.php?action=showDash');
+        exit; 
+        
+    }
+
+    public function modifyText2($content)
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+      
+        $affectedText = $textManager->editText2($content);
+
+        header('Location:index.php?action=showDash');
+        exit; 
+        
     }
 }

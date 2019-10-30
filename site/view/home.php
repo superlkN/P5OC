@@ -31,7 +31,6 @@
     <div class="presentation">
         <h2> Bienvenue sur notre site web : </h2>
 
-
         <p> 
             <?= $text1['content'] ?>
         </p>

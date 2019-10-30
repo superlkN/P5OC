@@ -80,6 +80,22 @@ try
             case "formEmail":
             $user->formEmail();
             break;
+
+            case "viewText1":
+            $user->viewText1();
+            break;
+
+            case "viewText2":
+            $user->viewText2();
+            break;
+
+            case "modifyText1":
+            $user->modifyText1($_POST['content']);
+            break;
+
+            case "modifyText2":
+            $user->modifyText2($_POST['content']);
+            break;
         }
     }
 }

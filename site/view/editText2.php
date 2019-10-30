@@ -18,13 +18,17 @@
             </div>
     </header>
 
-    <a class="buttonDash" href="index.php?action=viewText1">Modifier le texte de la page d'accueil</a>
-
-    <br>
-
-    <a class="buttonDash" href="index.php?action=viewText2">Modifier le texte de la page présentation</a>
     
-
+        <form class="formEdit" action="index.php?action=modifyText2" method="post">
+            <div class="contentEdit">
+                <textarea id="textarea" class="content" name="content"><?= $text2['content'] ?></textarea>
+            </div>
+            <div>
+                <input class="button1" type="submit" value="Modifier" />
+            </div>
+        </form>
+     
+    
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <h4 class="lead"> Adresse : </h4>
@@ -41,6 +45,17 @@
         </div>
     </footer>
 </div>
+
+<script>
+tinymce.init({
+    selector: '#textarea',
+    height:500,
+    forced_root_block : false,
+    force_br_newlines : true,
+    force_p_newlines : false,
+    
+});
+</script>
 
 <?php $content = ob_get_clean(); ?>
 

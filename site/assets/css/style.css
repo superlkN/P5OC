@@ -169,6 +169,7 @@ input[type=submit]:hover {
   margin-top: 70px;
   margin-bottom: 100px;
   color: black;
+  max-width: 65em;
 }
 
 /* Fin du form */
@@ -224,4 +225,29 @@ input[type=submit]:hover {
 
 .portfolio {
   margin-bottom: 100px;
+}
+
+.formEdit {
+  width: 1200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.buttonDash {
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 100px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 {
+  margin-top: 20px;
 }
