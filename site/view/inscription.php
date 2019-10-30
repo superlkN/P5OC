@@ -1,4 +1,4 @@
-<?php $title = 'Présentation'; ?>
+<?php $title = 'Inscription'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
