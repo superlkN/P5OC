@@ -19,7 +19,7 @@
          
     </head>
         
-    <body>
+    <body onload="initMap()">
         <?= $content ?>
     </body>
 </html>

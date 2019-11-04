@@ -21,7 +21,7 @@ class Slider {
 
     afficherSlide() {
         this.slide[0] = {
-            images: 'assets/img/5.jpg',
+            images: 'assets/img/5.jpg', 
         }
         this.slide[1] = {
             'images': 'assets/img/7.jpg',

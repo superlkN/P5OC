@@ -90,11 +90,41 @@ try
             break;
 
             case "modifyText1":
-            $user->modifyText1($_POST['content']);
+                if(!empty($_POST['content']))
+                    {
+                        $user->modifyText1($_POST['content']);
+                    }
+                    else
+                    {
+                        throw new Exception('Tous les champs ne sont pas remplis !');
+                    }
             break;
 
             case "modifyText2":
-            $user->modifyText2($_POST['content']);
+                if(!empty($_POST['content']))
+                    {
+                        $user->modifyText2($_POST['content']);
+                    }
+                    else
+                    {
+                        throw new Exception('Tous les champs ne sont pas remplis !');
+                    }
+            
+            break;
+
+            case "viewLatLong":
+            $user->viewLatLong();
+            break;
+
+            case "modifyLatLong":
+                if(!empty($_POST['longitude']) && !empty($_POST['latitude']))
+                    {
+                        $user->modifyLatLong($_POST['latitude'],$_POST['longitude']);
+                    }
+                    else
+                    {
+                        throw new Exception('Tous les champs ne sont pas remplis !');
+                    }    
             break;
         }
     }

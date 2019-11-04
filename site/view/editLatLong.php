@@ -1,4 +1,4 @@
-<?php $title = 'Dashboard'; ?>
+<?php $title = 'Edition texte 1'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
@@ -18,16 +18,18 @@
             </div>
     </header>
 
-    <a class="buttonDash" href="index.php?action=viewText1">Modifier le texte de la page d'accueil</a>
-
-    <br>
-
-    <a class="buttonDash" href="index.php?action=viewText2">Modifier le texte de la page présentation</a>
-
-    <br>
     
-    <a class="buttonDash" href="index.php?action=viewLatLong"> <?= $pos['latitude'] ?> , <?= $pos['longitude'] ?> </a>
-
+        <form class="formEdit" action="index.php?action=modifyLatLong" method="post">
+            <div class="contentEdit">
+                <textarea id="textarea" class="latitude" name="latitude"> <?= $pos['latitude'] ?> </textarea>
+                <textarea id="textarea" class="longitude" name="longitude"> <?= $pos['longitude'] ?> </textarea>
+            </div>
+            <div>
+                <input class="button1" type="submit" value="Modifier" />
+            </div>
+        </form>
+     
+    
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <h4 class="lead"> Adresse : </h4>

@@ -1,6 +1,7 @@
 <?php
 
 require_once(MODEL.'AuthManager.php');
+require_once(MODEL.'TextManager.php');
 
 class UserController 
 {
@@ -149,6 +150,9 @@ class UserController
             $text1 = $textManager->getText1();
             $text2 = $textManager->getText2();
 
+            $textManager = new P5OC\site\Model\TextManager();
+            $pos = $textManager->getPosition();
+
             require(VIEW.'dashboard.php');
         } 
         else 
@@ -246,5 +250,22 @@ class UserController
         header('Location:index.php?action=showDash');
         exit; 
         
+    }
+
+    public function viewLatLong()
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $pos = $textManager->getPosition();
+
+        require(VIEW.'editLatLong.php');
+    }
+
+    public function modifyLatLong($latitude, $longitude)
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+
+        $affectedPosition = $textManager->editLatLong($latitude, $longitude);
+
+        header('Location: index.php?action=showDash');
     }
 }

@@ -22,6 +22,8 @@ class Home
 
     public function showContact()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $pos = $textManager->getPosition();
         require(VIEW.'contact.php');
     }
 

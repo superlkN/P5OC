@@ -61,4 +61,22 @@ class TextManager extends Manager
 
         return $affectedText;
     }
+
+    public function getPosition() {
+        $db = $this->dbConnect();
+        $req = $db->prepare('SELECT latitude, longitude FROM contact');
+        $req->execute();
+        $pos = $req->fetch();
+
+
+        return $pos;
+    }
+
+    public function editLatLong($latitude, $longitude) {
+        $db = $this->dbConnect();
+        $req = $db->prepare('UPDATE contact SET latitude = ?, longitude = ? WHERE id = 1');
+        $affectedLatLong = $req->execute(array($latitude, $longitude));
+
+        return $affectedLatLong;
+    }
 }

@@ -43,6 +43,32 @@
 
       <div id="map" class="map"></div>
 
+
+
+     
+    
+
+      <script type="text/javascript">
+
+       function initMap() {
+
+          var lat = <?= $pos['latitude'] ?> 
+          var long = <?= $pos['longitude'] ?> 
+          var menuiserie = [lat, long];
+          
+          window.map = new L.map("map").setView(menuiserie, 16);
+          L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
+              maxZoom: 16,
+              minZoom: 10
+          }).addTo(map);
+
+          var marker = L.marker(menuiserie)
+          .bindPopup('<h3>Menuiserie Quellard</h3>')
+          .addTo(map);
+
+        }
+      </script>
+
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -63,7 +89,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
-<script src="assets/js/map.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 
