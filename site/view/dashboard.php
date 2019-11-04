@@ -26,7 +26,7 @@
 
     <br>
     
-    <a class="buttonDash" href="index.php?action=viewLatLong"> <?= $pos['latitude'] ?> , <?= $pos['longitude'] ?> </a>
+    <a class="buttonDash" href="index.php?action=viewLatLong">Modifier la latitude et la longitude de la carte de la page contact</a>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

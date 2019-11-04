@@ -1,4 +1,4 @@
-<?php $title = 'Edition texte 1'; ?>
+<?php $title = 'Edition latitude longitude'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
