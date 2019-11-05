@@ -35,16 +35,9 @@ class Home
     {
         $textManager = new P5OC\site\Model\TextManager();
         $footer = $textManager->showFooter();
+        $images = $textManager->getImages();
 
         require(VIEW.'portfolio.php');
-    }
-
-    public function showGalerie()
-    {
-        $textManager = new P5OC\site\Model\TextManager();
-        $footer = $textManager->showFooter();
-        
-        require(VIEW.'galerie.php');
     }
 }
 

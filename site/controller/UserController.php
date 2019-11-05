@@ -291,4 +291,12 @@ class UserController
 
         header('Location: index.php?action=showDash');
     }
+
+    public function viewEditPortfolio() 
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $images = $textManager->getImages();
+
+        require(VIEW.'editPortfolio.php');
+    }
 }

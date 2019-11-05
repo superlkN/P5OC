@@ -141,6 +141,10 @@ try
             case "viewFooterEdit": 
             $user->viewFooterEdit();
             break;
+
+            case "viewEditPortfolio":
+            $user->viewEditPortfolio();
+            break;
         }
     }
 }

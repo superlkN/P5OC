@@ -78,3 +78,4 @@ class Slider {
 }
 
 let slider = new Slider(0, 10000, "", [], true);
+

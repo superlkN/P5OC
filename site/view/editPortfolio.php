@@ -25,31 +25,12 @@
         <p>Cliquez sur une image si dessous:</p>
     </div>
 
-    <div id="lightgallery" class="portfolio">
-        <?php while ($image = $images->fetch())
-        {
-        ?>       
-            <a href="<?= $image['petite_image'] ?>">
-                <img class="imgPortfolio" src="<?= $image['grande_image'] ?>" />
-            </a>
-        <?php 
-        }
-        ?>
-    </div>
+    <p> yo </p>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
         <h4 class="lead"> Adresse : </h4>
-            <p> <?php echo $footer['adresse'] ?> </p>
-
-            <h4 class="lead"> Horaires d'ouverture : </h4>
-            <p> <?php echo $footer['horaires'] ?> </p>
-
-            <h4 class="lead"> Appellez-nous : </h4>
-            <p> <?php echo $footer['numero'] ?> </p>
-
-            <h4 class="lead"> E-mail : </h4>
-            <p> <?php echo $footer['mail'] ?> </p>
+            <p> Copyrite Quellard Corentin @ 2019 </p>
         </div>
     </footer>
 </div>
@@ -59,6 +40,8 @@
         $("#lightgallery").lightGallery(); 
     });
 </script>
+
+<script src="assets/js/portfolio.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

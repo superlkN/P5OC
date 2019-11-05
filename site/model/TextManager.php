@@ -98,4 +98,13 @@ class TextManager extends Manager
 
         return $footerEdit;
     }
+
+    public function getImages() 
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('SELECT id, petite_image, grande_image FROM portfolio ORDER BY id');
+        $req->execute();
+
+        return $req;
+    }
 }

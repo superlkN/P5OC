@@ -32,6 +32,10 @@
     
     <a class="buttonDash" href="index.php?action=viewFooterEdit">Modifier le bas de page</a>
 
+    <br>
+    
+    <a class="buttonDash" href="index.php?action=viewEditPortfolio">Modifier la galerie d'images</a>
+
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <p> Copyrite Quellard Corentin @ 2019 </p>
