@@ -31,17 +31,7 @@
     
     <footer class="mastfoot mt-auto">
         <div class="inner">
-            <h4 class="lead"> Adresse : </h4>
-            <p> 9 RUE DU CHAMP GUIHORE 35320 CREVIN </p>
-
-            <h4 class="lead"> Horaires d'ouverture : </h4>
-            <p> Lundi - Vendredi 9:00 - 19:00 </p>
-
-            <h4 class="lead"> Appellez-nous : </h4>
-            <p> 02 99 42 41 83 </p>
-
-            <h4 class="lead"> E-mail : </h4>
-            <p> joel.quellard@sfr.fr </p>
+            <p> Copyrite Quellard Corentin @ 2019 </p>
         </div>
     </footer>
 </div>

@@ -43,16 +43,16 @@
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <h4 class="lead"> Adresse : </h4>
-            <p> 9 RUE DU CHAMP GUIHORE 35320 CREVIN </p>
+            <p> <?php echo $footer['adresse'] ?> </p>
 
             <h4 class="lead"> Horaires d'ouverture : </h4>
-            <p> Lundi - Vendredi 9:00 - 19:00 </p>
+            <p> <?php echo $footer['horaires'] ?> </p>
 
             <h4 class="lead"> Appellez-nous : </h4>
-            <p> 02 23 30 92 60 </p>
+            <p> <?php echo $footer['numero'] ?> </p>
 
             <h4 class="lead"> E-mail : </h4>
-            <p> joel.quellard@sfr.fr </p>
+            <p> <?php echo $footer['mail'] ?> </p>
         </div>
         <?php if (!isset($_SESSION['id'])) { ?>
         <a class="bouton-connect" href="index.php?action=showLogin"><i class="fas fa-sign-in-alt"></i></a>

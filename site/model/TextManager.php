@@ -79,4 +79,23 @@ class TextManager extends Manager
 
         return $affectedLatLong;
     }
+
+    public function showFooter() 
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('SELECT adresse, horaires, numero, mail FROM footer');
+        $req->execute();
+        $footer = $req->fetch();
+
+        return $footer;
+    }
+
+    public function editFooter($adresse, $horaires, $numero, $email)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('UPDATE footer SET adresse = ?, horaires = ?, numero = ?, mail = ? WHERE id = 1');
+        $footerEdit = $req->execute(array($adresse, $horaires, $numero, $email));
+
+        return $footerEdit;
+    }
 }

@@ -1,4 +1,4 @@
-<?php $title = 'Edition texte 1'; ?>
+<?php $title = 'Edition latitude longitude'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png">
@@ -19,9 +19,16 @@
     </header>
 
     
-        <form class="formEdit" action="index.php?action=modifyText1" method="post">
+        <form class="formEdit" action="index.php?action=footerEdit" method="post">
             <div class="contentEdit">
-                <textarea id="textarea" class="content" name="content"><?= $text1['content'] ?></textarea>
+                <label for="adresse">Adresse: </label>
+                <textarea id="textarea" class="adresse" name="adresse"> <?= $footer['adresse'] ?> </textarea>
+                <label for="horaires">Horaires: </label>
+                <textarea id="textarea" class="horaires" name="horaires"> <?= $footer['horaires'] ?> </textarea>
+                <label for="numero">Numero de telephone: </label>
+                <textarea id="textarea" class="numero" name="numero"> <?= $footer['numero'] ?> </textarea>
+                <label for="mail">Adresse e-mail: </label>
+                <textarea id="textarea" class="mail" name="mail"> <?= $footer['mail'] ?> </textarea>
             </div>
             <div>
                 <input class="button1" type="submit" value="Modifier" />
@@ -35,17 +42,6 @@
         </div>
     </footer>
 </div>
-
-<script>
-tinymce.init({
-    selector: '#textarea',
-    height:500,
-    forced_root_block : false,
-    force_br_newlines : true,
-    force_p_newlines : false,
-    
-});
-</script>
 
 <?php $content = ob_get_clean(); ?>
 

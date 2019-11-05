@@ -7,6 +7,9 @@ class UserController
 {
     public function showInscription()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $footer = $textManager->showFooter();
+
         require(VIEW.'inscription.php');
     }
 
@@ -74,6 +77,9 @@ class UserController
 
     public function showLogin()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $footer = $textManager->showFooter();
+
         require(VIEW.'login.php');
     }
 
@@ -265,6 +271,23 @@ class UserController
         $textManager = new P5OC\site\Model\TextManager();
 
         $affectedPosition = $textManager->editLatLong($latitude, $longitude);
+
+        header('Location: index.php?action=showDash');
+    }
+
+    public function viewFooterEdit()
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $footer = $textManager->showFooter();
+
+        require(VIEW.'editFooter.php');
+    }
+
+    public function footerEdit($adresse, $horaires, $numero, $email)
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+
+        $footerEdited = $textManager->editFooter($adresse, $horaires, $numero, $email);
 
         header('Location: index.php?action=showDash');
     }

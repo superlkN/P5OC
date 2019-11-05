@@ -126,6 +126,21 @@ try
                         throw new Exception('Tous les champs ne sont pas remplis !');
                     }    
             break;
+
+            case "footerEdit":
+                if(!empty($_POST['adresse']) && !empty($_POST['horaires']) && !empty($_POST['numero']) && !empty($_POST['mail']))
+                    {
+                        $user->footerEdit($_POST['adresse'], $_POST['horaires'], $_POST['numero'], $_POST['mail']);
+                    }
+                    else
+                    {
+                        throw new Exception('Tous les champs ne sont pas remplis !');
+                    }
+            break;
+
+            case "viewFooterEdit": 
+            $user->viewFooterEdit();
+            break;
         }
     }
 }

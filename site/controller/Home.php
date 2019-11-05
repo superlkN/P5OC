@@ -8,6 +8,7 @@ class Home
     {
         $textManager = new P5OC\site\Model\TextManager();
         $text1 = $textManager->getText1();
+        $footer = $textManager->showFooter();
 
         require(VIEW.'home.php');
     }
@@ -16,6 +17,7 @@ class Home
     {
         $textManager = new P5OC\site\Model\TextManager();
         $text2 = $textManager->getText2();
+        $footer = $textManager->showFooter();
 
         require(VIEW.'presentation.php');
     }
@@ -24,16 +26,24 @@ class Home
     {
         $textManager = new P5OC\site\Model\TextManager();
         $pos = $textManager->getPosition();
+        $footer = $textManager->showFooter();
+
         require(VIEW.'contact.php');
     }
 
     public function showPortfolio()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $footer = $textManager->showFooter();
+
         require(VIEW.'portfolio.php');
     }
 
     public function showGalerie()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $footer = $textManager->showFooter();
+        
         require(VIEW.'galerie.php');
     }
 }
