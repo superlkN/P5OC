@@ -49,8 +49,6 @@
     });
 </script>
 
-<script src="assets/js/portfolio.js"></script>
-
 <?php $content = ob_get_clean(); ?>
 
 <?php require(VIEW.'template.php'); ?>

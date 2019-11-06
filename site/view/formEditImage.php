@@ -49,14 +49,6 @@
     </footer>
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-    });
-</script>
-
-<script src="assets/js/portfolio.js"></script>
-
 <?php $content = ob_get_clean(); ?>
 
 <?php require(VIEW.'template.php'); ?>
