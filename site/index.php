@@ -145,6 +145,16 @@ try
             case "viewEditPortfolio":
             $user->viewEditPortfolio();
             break;
+
+            case "showFormEditImage":
+            if(!empty($_GET['id']) && $_GET['id'] > 0)
+            {
+            $user->showFormEditImage($_GET['id']);
+            }
+            else {
+                throw new Exception('Aucune image sélectionnée');
+            }
+            break;
         }
     }
 }

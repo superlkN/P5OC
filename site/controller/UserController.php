@@ -299,4 +299,17 @@ class UserController
 
         require(VIEW.'editPortfolio.php');
     }
+
+    public function showFormEditImage($id) 
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $image = $textManager->getImage($_GET['id']);
+
+        require(VIEW.'formEditImage.php');
+    }
+
+    public function updateImage($petiteImage, $grandeImage, $id)
+    {
+        
+    }
 }

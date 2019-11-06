@@ -107,4 +107,22 @@ class TextManager extends Manager
 
         return $req;
     }
+
+    public function getImage($id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('SELECT id, petite_image, grande_image FROM portfolio WHERE id = ?');
+        $req->execute(array($id));
+
+        return $req;
+    }
+
+    public function updateImage($petiteImage, $grandeImage, $id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('UPDATE portfolio SET petite_image = ?, grande_image = ? WHERE id = ?');
+        $img = $req->execute(array($petiteImage, $grandeImage, $id));
+
+        return $img;
+    }
 }

@@ -25,16 +25,22 @@
         <p>Cliquez sur une image si dessous:</p>
     </div>
 
-    <?php while ($image = $images->fetch())
-    {
-    ?>       
-        <a href="<?= $image['petite_image'] ?>">
-            <img class="imgPortfolio" src="<?= $image['grande_image'] ?>" />
-            <a href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>
-        </a>
-    <?php 
-    }
-    ?>
+    <div class="container2">
+    <form  method="POST" action="index.php?action=updateImage&amp;id=<?= $variable['id'] ?>">
+
+        <label for="petite_image">Petite image: </label>
+        <input type="file" id="petite_image" name="petite_image"/>
+
+        <br>
+                     
+        <label for="adresse">Grande image: </label>
+        <input type="file" id="grande_image" name="grande_image"/>
+                    
+        <br />
+
+        <input class="button1" type="submit" name="upload" value="Changez l'image" />
+    </form>
+    </div>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
