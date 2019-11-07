@@ -26,7 +26,7 @@
     </div>
 
     <div class="container2">
-    <form  method="POST" action="index.php?action=updateImage&amp;id=<?= $variable['id'] ?>">
+    <form  method="POST" action="index.php?action=updateImage&amp;id=<?= $image['id'] ?>" enctype="multipart/form-data">
 
         <label for="petite_image">Petite image: </label>
         <input type="file" id="petite_image" name="petite_image"/>

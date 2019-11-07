@@ -113,11 +113,12 @@ class TextManager extends Manager
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT id, petite_image, grande_image FROM portfolio WHERE id = ?');
         $req->execute(array($id));
+        $image = $req->fetch();
 
-        return $req;
+        return $image;
     }
 
-    public function updateImage($petiteImage, $grandeImage, $id)
+    public function updateImages($petiteImage, $grandeImage, $id)
     {
         $db = $this->dbConnect();
         $req = $db->prepare('UPDATE portfolio SET petite_image = ?, grande_image = ? WHERE id = ?');

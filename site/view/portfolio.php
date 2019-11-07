@@ -29,8 +29,8 @@
         <?php while ($image = $images->fetch())
         {
         ?>       
-            <a href="<?= $image['petite_image'] ?>">
-                <img class="imgPortfolio" src="<?= $image['grande_image'] ?>" />
+            <a href="assets/img/<?= $image['petite_image'] ?>">
+                <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />
             </a>
         <?php 
         }

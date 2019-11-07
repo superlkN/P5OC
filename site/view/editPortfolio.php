@@ -28,8 +28,8 @@
     <?php while ($image = $images->fetch())
     {
     ?>       
-        <a href="<?= $image['petite_image'] ?>">
-            <img class="imgPortfolio" src="<?= $image['grande_image'] ?>" />
+        <a href="assets/img/<?= $image['petite_image'] ?>">
+            <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />
             <a href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>
         </a>
     <?php 
@@ -42,12 +42,6 @@
         </div>
     </footer>
 </div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-    });
-</script>
 
 <?php $content = ob_get_clean(); ?>
 

@@ -155,6 +155,10 @@ try
                 throw new Exception('Aucune image sélectionnée');
             }
             break;
+
+            case "updateImage":
+            $user->updateImage($_FILES['petite_image'], $_FILES['grande_image'], $_GET['id']);
+            break;
         }
     }
 }
