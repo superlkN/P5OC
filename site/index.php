@@ -159,6 +159,10 @@ try
             case "updateImage":
             $user->updateImage($_FILES['petite_image'], $_FILES['grande_image'], $_GET['id']);
             break;
+
+            case "viewEditSlider":
+            $user->viewEditSlider();
+            break;
         }
     }
 }

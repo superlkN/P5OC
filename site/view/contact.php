@@ -48,8 +48,8 @@
 
         function initMap() {
 
-            var lat = <?= $pos['latitude'] ?> 
-            var long = <?= $pos['longitude'] ?> 
+            var lat = <?= $pos['latitude'] ?> ;
+            var long = <?= $pos['longitude'] ?> ;
             var menuiserie = [lat, long];
             
             window.map = new L.map("map").setView(menuiserie, 16);

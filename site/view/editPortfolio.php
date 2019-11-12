@@ -24,18 +24,27 @@
         <h2 class="titrePres">Portfolio :</h2>
         <p>Cliquez sur une image si dessous:</p>
     </div>
-
+            
+    <div class="container-image">
     <?php while ($image = $images->fetch())
     {
-    ?>       
-        <a href="assets/img/<?= $image['petite_image'] ?>">
-            <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />
-            <a href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>
-        </a>
+    ?>
+
+      
+        <div class="imagesDash">     
+            <a href="assets/img/<?= $image['petite_image'] ?>">
+                <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />  
+            </a>  
+            <a class="boutonImage" href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>   
+        </div> 
+        
+      
+
     <?php 
     }
     ?>
-
+    </div>
+     
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <p> Copyrite Quellard Corentin @ 2019 </p>

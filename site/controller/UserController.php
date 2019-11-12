@@ -354,4 +354,9 @@ class UserController
             return $name_file;
         }
     }
+
+    public function viewEditSlider()
+    {
+        require(VIEW.'editSlider.php');
+    }
 }

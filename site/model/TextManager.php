@@ -33,17 +33,6 @@ class TextManager extends Manager
         return $req;
     }
 
-    /**
-     *  Met à jour un chapitre dans la bdd
-     * 
-     * @param String $title titre du chapitre
-     * @param String $content contenu du chapitre
-     * @param int $id identifiant de l'entité
-     * 
-     * @return array return le titre, le contenu, et l'id 
-     * 
-     */
-
     public function editText1($content) 
     {
         $db = $this->dbConnect();
@@ -125,5 +114,15 @@ class TextManager extends Manager
         $img = $req->execute(array($petiteImage, $grandeImage, $id));
 
         return $img;
+    }
+
+    public function getSliderImage($id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('SELECT chemin FROM slider WHERE id = :id');
+        $req->execute([':id' => $id]);
+        $res = $req->fetchColumn();
+ 
+    return $res;
     }
 }
