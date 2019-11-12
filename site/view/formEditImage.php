@@ -33,7 +33,7 @@
 
         <br>
                      
-        <label for="adresse">Grande image: </label>
+        <label for="grande_image">Grande image: </label>
         <input type="file" id="grande_image" name="grande_image"/>
                     
         <br />

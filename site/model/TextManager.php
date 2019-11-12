@@ -125,4 +125,13 @@ class TextManager extends Manager
  
     return $res;
     }
+
+    public function updateSliderImages($image1, $image2, $image3, $image4, $id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('UPDATE slider SET chemin = ? WHERE id = :id');
+        $req->execute([ ':id' => $id]);
+
+        return $req;
+    }
 }

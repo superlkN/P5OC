@@ -359,4 +359,20 @@ class UserController
     {
         require(VIEW.'editSlider.php');
     }
+
+    public function showFormEditSlider()
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $slide1 = $textManager->getSliderImage(1);
+        $slide2 = $textManager->getSliderImage(2);
+        $slide3 = $textManager->getSliderImage(3);
+        $slide4 = $textManager->getSliderImage(4);
+
+        require(VIEW.'formEditSlider.php');
+    }
+
+    public function updateSliderImages()
+    {
+
+    }
 }

@@ -24,12 +24,18 @@
         <h2 class="titrePres">Slider :</h2>
     </div>
 
-    <div class="imagesDash">     
-        <a href=""> </a>  
-        <a class="boutonImage" href="index.php?action=showFormEditSlider">Update</a>   
-    </div> 
-            
-     
+    <div class="container2">
+    <form  method="POST" action="index.php?action=updateSliderImage&amp;id=" enctype="multipart/form-data">
+
+        <label for="slide">Première slide: </label>
+        <input type="file" id="slide" name="slide"/>
+
+        <br>
+
+        <input class="button1" type="submit" name="upload" value="Changez l'image" />
+    </form>
+    </div>
+
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <p> Copyrite Quellard Corentin @ 2019 </p>

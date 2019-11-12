@@ -163,6 +163,10 @@ try
             case "viewEditSlider":
             $user->viewEditSlider();
             break;
+
+            case "showFormEditSlider":
+            $user->showFormEditSlider();
+            break;
         }
     }
 }
