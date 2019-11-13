@@ -43,34 +43,34 @@ class UserController
                             exit;
                             
                         } else {
-                            echo "Vos mots de passes ne correspondent pas !";
                             header("refresh:2;url=index.php?action=showInscription");
+                            echo "Vos mots de passes ne correspondent pas !";
                             exit;
                             
                         }
                     } else {
-                        echo "Adresse mail déjà utilisée !";
                         header("refresh:2;url=index.php?action=showInscription");
+                        echo "Adresse mail déjà utilisée !";
                         exit;
                     }
                     } else {
-                        echo "Votre adresse mail n'est pas valide !";
                         header("refresh:2;url=index.php?action=showInscription");
+                        echo "Votre adresse mail n'est pas valide !";
                         exit;
                     }
                 } else {
-                    echo "Vos adresses mail ne correspondent pas !";
                     header("refresh:2;url=index.php?action=showInscription");
+                    echo "Vos adresses mail ne correspondent pas !";
                     exit;
                 }
             } else {
-                echo "Votre pseudo ne doit pas dépasser 255 caractères !";
                 header("refresh:2;url=index.php?action=showInscription");
+                echo "Votre pseudo ne doit pas dépasser 255 caractères !";
                 exit;
             }
         } else {
-            echo "Tous les champs doivent être complétés !";
             header("refresh:2;url=index.php?action=showInscription");
+            echo "Tous les champs doivent être complétés !";
             exit;
         }   
     }
@@ -119,18 +119,18 @@ class UserController
                         exit;
                     }
                 } else {
-                    echo "Mauvais mail ou mot de passe !";
                     header("refresh:2;url=index.php?action=showLogin");
+                    echo "Mauvais mail ou mot de passe !";
                     exit;
                 }
             } else {
-                echo "Mauvais Mail ou mot de passe !";
                 header("refresh:2;url=index.php?action=showLogin");
+                echo "Mauvais Mail ou mot de passe !";
                 exit;
             } 
         } else {
-            echo "Tous les champs doivent être complétés !";
             header("refresh:2;url=index.php?action=showLogin");
+            echo "Tous les champs doivent être complétés !";
             exit;
         }      
     }
@@ -163,8 +163,9 @@ class UserController
         } 
         else 
         {
-            echo "Vous n'avez pas accès à cette page, vous allez être redirigé à la page d'accueil.";
             header( "refresh:3;url=index.php" );
+            echo "Vous n'avez pas accès à cette page, vous allez être redirigé à la page d'accueil.";
+            exit;
         }
     }
 
@@ -185,7 +186,7 @@ class UserController
 
     public function formEmail()
     {
-        $destinataire = 'superlkn35@domain.com';
+        $destinataire = 'superlkn35@gmail.com';
         // Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
         $expediteur = $_POST['email'];
         
@@ -201,13 +202,15 @@ class UserController
         
          if(mail($destinataire, $objet, $message, $headers))
         {
+            header('refresh:0.1;url=index.php?action=showContact');
             echo '<script languag="javascript" >alert("Votre message a bien été envoyé ");</script>';
         }
         else // Non envoyé
         {
+            header('refresh:0.1;url=index.php?action=showContact');
             echo '<script languag="javascript">alert("Votre message n\'a pas pu être envoyé");</script>';
+            exit;
         }
-        header('refresh:3;url=index.php?action=showContact');
     }
 
     /**
