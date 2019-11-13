@@ -273,6 +273,7 @@ class UserController
         $affectedPosition = $textManager->editLatLong($latitude, $longitude);
 
         header('Location: index.php?action=showDash');
+        exit;
     }
 
     public function viewFooterEdit()
@@ -290,6 +291,7 @@ class UserController
         $footerEdited = $textManager->editFooter($adresse, $horaires, $numero, $email);
 
         header('Location: index.php?action=showDash');
+        exit;
     }
 
     public function viewEditPortfolio() 
@@ -317,6 +319,7 @@ class UserController
         $images = $textManager->updateImages($petiteImage , $grandeImage, $id);
 
         header('Location:index.php?action=viewEditPortfolio');
+        exit;
     }
 
     private function upload($cible)
@@ -355,24 +358,22 @@ class UserController
         }
     }
 
-    public function viewEditSlider()
-    {
-        require(VIEW.'editSlider.php');
-    }
-
     public function showFormEditSlider()
     {
-        $textManager = new P5OC\site\Model\TextManager();
-        $slide1 = $textManager->getSliderImage(1);
-        $slide2 = $textManager->getSliderImage(2);
-        $slide3 = $textManager->getSliderImage(3);
-        $slide4 = $textManager->getSliderImage(4);
-
         require(VIEW.'formEditSlider.php');
     }
 
-    public function updateSliderImages()
+    public function updateSliderImages($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide)
     {
+        $premiereSlide = $this->upload('premiere_slide');
+        $deuxiemeSlide = $this->upload('deuxieme_slide');
+        $troisiemeSlide = $this->upload('troisieme_slide');
+        $quatriemeSlide = $this->upload('quatrieme_slide');
+       
+        $textManager = new P5OC\site\Model\TextManager();
+        $slider = $textManager->updateSliderImage($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide);
 
+        header('Location:index.php?action=showDash');
+        exit;
     }
 }

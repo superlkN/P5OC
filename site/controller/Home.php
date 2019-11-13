@@ -9,10 +9,8 @@ class Home
         $textManager = new P5OC\site\Model\TextManager();
         $text1 = $textManager->getText1();
         $footer = $textManager->showFooter();
-        $slide1 = $textManager->getSliderImage(1);
-        $slide2 = $textManager->getSliderImage(2);
-        $slide3 = $textManager->getSliderImage(3);
-        $slide4 = $textManager->getSliderImage(4);
+        $slider = $textManager->getSliderImage();
+        
 
         require(VIEW.'home.php');
     }

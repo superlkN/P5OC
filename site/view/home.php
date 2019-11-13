@@ -23,19 +23,19 @@
     <section id="slider">
         <div class="container3">
             <div class="slides">
-                <img src="<?= $slide1 ?>" style="width:100%">    
+                <img src="assets/img/<?= $slider['premiere_slide'] ?>" style="width:100%">    
             </div>
 
             <div class="slides">
-                <img src="<?= $slide2 ?>" style="width:100%">
+                <img src="assets/img/<?= $slider['deuxieme_slide'] ?>" style="width:100%">
             </div>
 
             <div class="slides">
-                <img src="<?= $slide3 ?>" style="width:100%"> 
+                <img src="assets/img/<?= $slider['troisieme_slide'] ?>" style="width:100%"> 
             </div>
 
             <div class="slides">
-                <img src="<?= $slide4 ?>" style="width:100%"> 
+                <img src="assets/img/<?= $slider['quatrieme_slide'] ?>" style="width:100%"> 
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

@@ -160,12 +160,12 @@ try
             $user->updateImage($_FILES['petite_image'], $_FILES['grande_image'], $_GET['id']);
             break;
 
-            case "viewEditSlider":
-            $user->viewEditSlider();
-            break;
-
             case "showFormEditSlider":
             $user->showFormEditSlider();
+            break;
+
+            case "updateSliderImages":
+            $user->updateSliderImages($_FILES['premiere_slide'], $_FILES['deuxieme_slide'], $_FILES['troisieme_slide'], $_FILES['quatrieme_slide']);
             break;
         }
     }

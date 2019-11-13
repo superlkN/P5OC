@@ -25,10 +25,25 @@
     </div>
 
     <div class="container2">
-    <form  method="POST" action="index.php?action=updateSliderImage&amp;id=" enctype="multipart/form-data">
+    <form class="formEditImg" method="POST" action="index.php?action=updateSliderImages" enctype="multipart/form-data">
 
-        <label for="slide">Première slide: </label>
-        <input type="file" id="slide" name="slide"/>
+        <label for="premiere_slide">Première slide: </label>
+        <input type="file" id="premiere_slide" name="premiere_slide"/>
+
+        <br>
+
+        <label for="deuxieme">Deuxième slide: </label>
+        <input type="file" id="deuxieme_slide" name="deuxieme_slide"/>
+
+        <br>
+
+        <label for="troisieme_slide">Troisième slide: </label>
+        <input type="file" id="troisieme_slide" name="troisieme_slide"/>
+
+        <br>
+
+        <label for="quatrieme_slide">Quatrième slide: </label>
+        <input type="file" id="quatrieme_slide" name="quatrieme_slide"/>
 
         <br>
 

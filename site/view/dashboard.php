@@ -38,7 +38,7 @@
 
     <br>
     
-    <a class="buttonDash" href="index.php?action=viewEditSlider">Modifier le slider</a>
+    <a class="buttonDash" href="index.php?action=showFormEditSlider">Modifier le slider</a>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

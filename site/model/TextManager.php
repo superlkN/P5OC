@@ -116,22 +116,22 @@ class TextManager extends Manager
         return $img;
     }
 
-    public function getSliderImage($id)
+    public function getSliderImage()
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT chemin FROM slider WHERE id = :id');
-        $req->execute([':id' => $id]);
-        $res = $req->fetchColumn();
+        $req = $db->prepare('SELECT premiere_slide, deuxieme_slide, troisieme_slide, quatrieme_slide FROM slider WHERE id = 1');
+        $req->execute();
+        $res = $req->fetch();
  
-    return $res;
+        return $res;
     }
 
-    public function updateSliderImages($image1, $image2, $image3, $image4, $id)
+    public function updateSliderImage($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE slider SET chemin = ? WHERE id = :id');
-        $req->execute([ ':id' => $id]);
+        $req = $db->prepare('UPDATE slider SET premiere_slide = ?, deuxieme_slide = ?, troisieme_slide = ?, quatrieme_slide = ? WHERE id = 1');
+        $slide = $req->execute(array($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide));
 
-        return $req;
+        return $slide;
     }
 }
