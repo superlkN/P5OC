@@ -1,7 +1,7 @@
 <?php $title = 'Login'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -14,17 +14,19 @@
             </nav>
             </div>
     </header>
-      
-    <div class="container2 connexion" align="center">
-        <h2 class="titreLogin">Connexion</h2>
-        <br /><br />
-        <form method="POST" action="index.php?action=login">
-        <input type="email" name="mailconnect" placeholder="Mail" />
-        <input type="password" name="mdpconnect" placeholder="Mot de passe" />
-        <br /><br />
-        <input class="button1" type="submit" name="formconnexion" value="Se connecter !" />
-        </form>
-    </div>
+
+    <section>
+        <div class="container2 connexion" align="center">
+            <h2 class="titreLogin">Connexion</h2>
+            <br /><br />
+            <form method="POST" action="index.php?action=login">
+            <input type="email" name="mailconnect" placeholder="Mail" />
+            <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+            <br /><br />
+            <input class="button1" type="submit" name="formconnexion" value="Se connecter !" />
+            </form>
+        </div>
+    </section>  
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

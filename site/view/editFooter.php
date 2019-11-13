@@ -1,7 +1,7 @@
 <?php $title = 'Edition latitude longitude'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -18,7 +18,7 @@
             </div>
     </header>
 
-    
+    <section>
         <form class="formEdit" action="index.php?action=footerEdit" method="post">
             <div class="contentEdit">
                 <label for="adresse">Adresse: </label>
@@ -34,7 +34,7 @@
                 <input class="button1" type="submit" value="Modifier" />
             </div>
         </form>
-     
+    </section>
     
     <footer class="mastfoot mt-auto">
         <div class="inner">

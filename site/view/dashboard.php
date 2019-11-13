@@ -1,7 +1,7 @@
 <?php $title = 'Dashboard'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -17,6 +17,8 @@
             </nav>
             </div>
     </header>
+
+    <section>
 
     <a class="buttonDash" href="index.php?action=viewText1">Modifier le texte de la page d'accueil</a>
 
@@ -39,6 +41,8 @@
     <br>
     
     <a class="buttonDash" href="index.php?action=showFormEditSlider">Modifier le slider</a>
+
+    </section>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

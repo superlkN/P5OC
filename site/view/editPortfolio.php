@@ -1,7 +1,7 @@
 <?php $title = 'Portfolio'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -20,31 +20,32 @@
             </div>
     </header>
 
-    <div style="text-align:center">
-        <h2 class="titrePres">Portfolio :</h2>
-        <p>Cliquez sur une image si dessous:</p>
-    </div>
-            
-    <div class="container-image">
-    <?php while ($image = $images->fetch())
-    {
-    ?>
+    <section>              
+        <div style="text-align:center">
+            <h2 class="titrePres">Portfolio :</h2>
+            <p>Cliquez sur une image si dessous:</p>
+        </div>
+                
+        <div class="container-image">
 
-      
+        <?php while ($image = $images->fetch())
+        {
+        ?>
+    
         <div class="imagesDash">     
             <a href="assets/img/<?= $image['petite_image'] ?>">
                 <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />  
             </a>  
             <a class="boutonImage" href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>   
         </div> 
-        
-      
+            
+        <?php 
+        }
+        ?>
 
-    <?php 
-    }
-    ?>
-    </div>
-     
+        </div>
+    </section>
+
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <p> Copyrite Quellard Corentin @ 2019 </p>

@@ -1,7 +1,7 @@
 <?php $title = 'Slider'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -20,36 +20,38 @@
             </div>
     </header>
 
-    <div style="text-align:center">
-        <h2 class="titrePres">Slider :</h2>
-    </div>
+    <section>               
+        <div style="text-align:center">
+            <h2 class="titrePres">Slider :</h2>
+        </div>
 
-    <div class="container2">
-    <form class="formEditImg" method="POST" action="index.php?action=updateSliderImages" enctype="multipart/form-data">
+        <div class="container2">
+            <form class="formEditImg" method="POST" action="index.php?action=updateSliderImages" enctype="multipart/form-data">
 
-        <label for="premiere_slide">Première slide: </label>
-        <input type="file" id="premiere_slide" name="premiere_slide"/>
+                <label for="premiere_slide">Première slide: </label>
+                <input type="file" id="premiere_slide" name="premiere_slide"/>
 
-        <br>
+                <br>
 
-        <label for="deuxieme">Deuxième slide: </label>
-        <input type="file" id="deuxieme_slide" name="deuxieme_slide"/>
+                <label for="deuxieme">Deuxième slide: </label>
+                <input type="file" id="deuxieme_slide" name="deuxieme_slide"/>
 
-        <br>
+                <br>
 
-        <label for="troisieme_slide">Troisième slide: </label>
-        <input type="file" id="troisieme_slide" name="troisieme_slide"/>
+                <label for="troisieme_slide">Troisième slide: </label>
+                <input type="file" id="troisieme_slide" name="troisieme_slide"/>
 
-        <br>
+                <br>
 
-        <label for="quatrieme_slide">Quatrième slide: </label>
-        <input type="file" id="quatrieme_slide" name="quatrieme_slide"/>
+                <label for="quatrieme_slide">Quatrième slide: </label>
+                <input type="file" id="quatrieme_slide" name="quatrieme_slide"/>
 
-        <br>
+                <br>
 
-        <input class="button1" type="submit" name="upload" value="Changez l'image" />
-    </form>
-    </div>
+                <input class="button1" type="submit" name="upload" value="Changez l'image" />
+            </form>
+        </div>
+    </section>   
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

@@ -1,7 +1,7 @@
 <?php $title = 'Portfolio'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -20,22 +20,24 @@
             </div>
     </header>
 
-    <div style="text-align:center">
-        <h2 class="titrePres">Portfolio :</h2>
-        <p>Cliquez sur une image si dessous:</p>
-    </div>
+    <section>               
+        <div style="text-align:center">
+            <h2 class="titrePres">Portfolio :</h2>
+            <p>Cliquez sur une image si dessous:</p>
+        </div>
 
-    <div id="lightgallery" class="portfolio">
-        <?php while ($image = $images->fetch())
-        {
-        ?>       
-            <a href="assets/img/<?= $image['petite_image'] ?>">
-                <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />
-            </a>
-        <?php 
-        }
-        ?>
-    </div>
+        <div id="lightgallery" class="portfolio">
+            <?php while ($image = $images->fetch())
+            {
+            ?>       
+                <a href="assets/img/<?= $image['petite_image'] ?>" alt="photo-portfolio">
+                    <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" alt="photo-portfolio" />
+                </a>
+            <?php 
+            }
+            ?>
+        </div>
+    </section> 
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

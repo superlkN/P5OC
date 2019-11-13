@@ -1,7 +1,7 @@
 <?php $title = 'Inscription'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -15,25 +15,27 @@
             </div>
     </header>
 
-    <div class="container2 inscription" align="center">
-        <h2 class="titreInscription">Inscription</h2>
-        <div class="formInscription">
-            <form  method="POST" action="index.php?action=inscription">   
-                <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo"/>
-                     
-                <input type="email" placeholder="Votre mail" id="mail" name="mail"/>
+    <section>
+        <div class="container2 inscription" align="center">
+            <h2 class="titreInscription">Inscription</h2>
+            <div class="formInscription">
+                <form  method="POST" action="index.php?action=inscription">   
+                    <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo"/>
                         
-                <input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2"/>           
-                    
-                <input type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />                                  
-                    
-                <input type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
-                    
-                <br />
-                <input class="button1" type="submit" name="forminscription" value="Je m'inscris" />
-            </form>
+                    <input type="email" placeholder="Votre mail" id="mail" name="mail"/>
+                            
+                    <input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2"/>           
+                        
+                    <input type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />                                  
+                        
+                    <input type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
+                        
+                    <br />
+                    <input class="button1" type="submit" name="forminscription" value="Je m'inscris" />
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

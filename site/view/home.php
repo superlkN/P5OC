@@ -1,7 +1,7 @@
 <?php $title = 'Menuiserie Quellard'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -23,19 +23,19 @@
     <section id="slider">
         <div class="container3">
             <div class="slides">
-                <img src="assets/img/<?= $slider['premiere_slide'] ?>" style="width:100%">    
+                <img src="assets/img/<?= $slider['premiere_slide'] ?>" style="width:100%" alt="photo-chantier">    
             </div>
 
             <div class="slides">
-                <img src="assets/img/<?= $slider['deuxieme_slide'] ?>" style="width:100%">
+                <img src="assets/img/<?= $slider['deuxieme_slide'] ?>" style="width:100%" alt="photo-chantier">
             </div>
 
             <div class="slides">
-                <img src="assets/img/<?= $slider['troisieme_slide'] ?>" style="width:100%"> 
+                <img src="assets/img/<?= $slider['troisieme_slide'] ?>" style="width:100%" alt="photo-chantier"> 
             </div>
 
             <div class="slides">
-                <img src="assets/img/<?= $slider['quatrieme_slide'] ?>" style="width:100%"> 
+                <img src="assets/img/<?= $slider['quatrieme_slide'] ?>" style="width:100%" alt="photo-chantier"> 
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

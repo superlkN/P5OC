@@ -1,7 +1,7 @@
 <?php $title = 'Edition texte 1'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png">
+<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -18,7 +18,7 @@
             </div>
     </header>
 
-    
+    <section>
         <form class="formEdit" action="index.php?action=modifyText1" method="post">
             <div class="contentEdit">
                 <textarea id="textarea" class="content" name="content"><?= $text1['content'] ?></textarea>
@@ -27,7 +27,7 @@
                 <input class="button1" type="submit" value="Modifier" />
             </div>
         </form>
-     
+    </section>
     
     <footer class="mastfoot mt-auto">
         <div class="inner">
