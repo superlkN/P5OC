@@ -355,6 +355,7 @@ class UserController
                 exit("Impossible de copier le fichier dans $content_dir");
             }
             
+            header('refresh:2;url=index.php?action=showDash');
             echo "Le fichier a bien été uploadé";
 
             return $name_file;
@@ -383,9 +384,6 @@ class UserController
        
         $textManager = new P5OC\site\Model\TextManager();
         $slider = $textManager->updateSliderImage($chemin, $id);
-
-        header('Location:index.php?action=showDash');
-        exit;
     }
 
     public function viewAddImage()
@@ -400,9 +398,6 @@ class UserController
 
         $textManager = new P5OC\site\Model\TextManager();
         $create = $textManager->addImagePortfolio($petiteImage, $grandeImage);
-
-        header('Location:index.php?action=viewEditPortfolio');
-        exit;
     }
 
     public function deleteImagesPortfolio($id)
@@ -425,9 +420,6 @@ class UserController
 
         $textManager = new P5OC\site\Model\TextManager();
         $create = $textManager->addImageSlider($chemin);
-
-        header('Location:index.php?action=showEditSlider');
-        exit;
     }
 
     public function deleteImagesSlider($id)
