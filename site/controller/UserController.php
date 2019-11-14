@@ -361,22 +361,83 @@ class UserController
         }
     }
 
+    public function showEditSlider() 
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $images = $textManager->getSliderImages();
+
+        require(VIEW.'editSlider.php');
+    }
+
     public function showFormEditSlider()
     {
+        $textManager = new P5OC\site\Model\TextManager();
+        $image = $textManager->getSliderImage($_GET['id']);
+
         require(VIEW.'formEditSlider.php');
     }
 
-    public function updateSliderImages($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide)
+    public function updateSliderImages($chemin, $id)
     {
-        $premiereSlide = $this->upload('premiere_slide');
-        $deuxiemeSlide = $this->upload('deuxieme_slide');
-        $troisiemeSlide = $this->upload('troisieme_slide');
-        $quatriemeSlide = $this->upload('quatrieme_slide');
+        $chemin = $this->upload('slide');
        
         $textManager = new P5OC\site\Model\TextManager();
-        $slider = $textManager->updateSliderImage($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide);
+        $slider = $textManager->updateSliderImage($chemin, $id);
 
         header('Location:index.php?action=showDash');
         exit;
     }
+
+    public function viewAddImage()
+    {
+        require(VIEW.'viewAddImage.php');
+    }
+
+    public function createImagePortfolio($petiteImage, $grandeImage)
+    {
+        $petiteImage = $this->upload('petite_image');
+        $grandeImage = $this->upload('grande_image');
+
+        $textManager = new P5OC\site\Model\TextManager();
+        $create = $textManager->addImagePortfolio($petiteImage, $grandeImage);
+
+        header('Location:index.php?action=viewEditPortfolio');
+        exit;
+    }
+
+    public function deleteImagesPortfolio($id)
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $delete = $textManager->deleteImagePortfolio($id);
+
+        header('Location:index.php?action=viewEditPortfolio');
+        exit;
+    }
+
+    public function viewAddSlide()
+    {
+        require(VIEW.'viewAddSlide.php');
+    }
+
+    public function createImageSlider($chemin)
+    {
+        $chemin = $this->upload('slide');
+
+        $textManager = new P5OC\site\Model\TextManager();
+        $create = $textManager->addImageSlider($chemin);
+
+        header('Location:index.php?action=showEditSlider');
+        exit;
+    }
+
+    public function deleteImagesSlider($id)
+    {
+        $textManager = new P5OC\site\Model\TextManager();
+        $delete = $textManager->deleteImageSlider($id);
+
+        header('Location:index.php?action=showEditSlider');
+        exit;
+    }
+
+    
 }

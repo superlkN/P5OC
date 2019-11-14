@@ -12,7 +12,7 @@
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
-                <?php if (isset($_SESSION['id'])) { ?>
+                <?php if (isset($_SESSION['isadmin']) && $_SESSION['isadmin'] == 1) { ?>
                 <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
                 <?php } ?>
             </nav>

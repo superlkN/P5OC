@@ -40,7 +40,7 @@
 
     <br>
     
-    <a class="buttonDash" href="index.php?action=showFormEditSlider">Modifier le slider</a>
+    <a class="buttonDash" href="index.php?action=showEditSlider">Modifier le slider</a>
 
     </section>
 

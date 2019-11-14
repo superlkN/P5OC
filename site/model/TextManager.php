@@ -116,22 +116,69 @@ class TextManager extends Manager
         return $img;
     }
 
-    public function getSliderImage()
+    public function getSliderImage($id)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT premiere_slide, deuxieme_slide, troisieme_slide, quatrieme_slide FROM slider WHERE id = 1');
-        $req->execute();
+        $req = $db->prepare('SELECT id, chemin FROM slider WHERE id = ?');
+        $req->execute(array($id));
         $res = $req->fetch();
  
         return $res;
     }
 
-    public function updateSliderImage($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide)
+    public function getSliderImages()
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE slider SET premiere_slide = ?, deuxieme_slide = ?, troisieme_slide = ?, quatrieme_slide = ? WHERE id = 1');
-        $slide = $req->execute(array($premiereSlide, $deuxiemeSlide, $troisiemeSlide, $quatriemeSlide));
+        $req = $db->prepare('SELECT id, chemin FROM slider ORDER BY id');
+        $req->execute();
+ 
+        return $req;
+    }
+
+    public function updateSliderImage($chemin, $id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('UPDATE slider SET chemin = ? WHERE id = ?');
+        $slide = $req->execute(array($chemin, $id));
 
         return $slide;
+    }
+
+    public function addImagePortfolio($petiteImage, $grandeImage) 
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('INSERT INTO portfolio(petite_image, grande_image) VALUES (?, ?)');
+        $img = $req->execute(array($petiteImage, $grandeImage));
+
+        return $img;
+    }
+
+    public function deleteImagePortfolio($id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('DELETE FROM portfolio WHERE id = ?');
+        $req->execute(array($id));
+        $delete = $req->fetch();
+
+        return $delete;
+    }
+
+    public function addImageSlider($chemin)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('INSERT INTO slider(chemin) VALUES (?)');
+        $img = $req->execute(array($chemin));
+
+        return $img;
+    }
+
+    public function deleteImageSlider($id)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare('DELETE FROM slider WHERE id = ?');
+        $req->execute(array($id));
+        $delete = $req->fetch();
+
+        return $delete;
     }
 }

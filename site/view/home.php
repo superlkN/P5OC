@@ -22,22 +22,17 @@
 
     <section id="slider">
         <div class="container3">
-            <div class="slides">
-                <img src="assets/img/<?= $slider['premiere_slide'] ?>" style="width:100%" alt="photo-chantier">    
-            </div>
 
+            <?php while ($image = $images->fetch())
+            {
+            ?>       
             <div class="slides">
-                <img src="assets/img/<?= $slider['deuxieme_slide'] ?>" style="width:100%" alt="photo-chantier">
-            </div>
-
-            <div class="slides">
-                <img src="assets/img/<?= $slider['troisieme_slide'] ?>" style="width:100%" alt="photo-chantier"> 
-            </div>
-
-            <div class="slides">
-                <img src="assets/img/<?= $slider['quatrieme_slide'] ?>" style="width:100%" alt="photo-chantier"> 
-            </div>
-
+                <img src="assets/img/<?= $image['chemin'] ?>" style="width:100%" alt="photo-chantier" />
+            </div>    
+            <?php 
+            }
+            ?>
+            
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -99,7 +94,7 @@
     </section>
 
     <div class="presentation">
-        <h2> Bienvenue sur notre site web : </h2>
+        <h2> Bienvenue sur le site web de la Menuiserie Quellard : </h2>
 
         <p> 
             <?= $text1['content'] ?>

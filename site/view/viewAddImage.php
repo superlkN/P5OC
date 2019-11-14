@@ -1,4 +1,4 @@
-<?php $title = 'Slider'; ?>
+<?php $title = 'Ajouté image Portfolio'; ?>
 
 <?php ob_start(); ?>
 <img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
@@ -20,23 +20,23 @@
             </div>
     </header>
 
-    <section>               
-        <div style="text-align:center">
-            <h2 class="titrePres">Slider :</h2>
-        </div>
+    <section>              
+       
+    <form class="formAddImg" method="POST" action="index.php?action=createImagePortfolio" enctype="multipart/form-data">
+        <label for="petite_image">Petite image: </label>
+        <input type="file" id="petite_image" name="petite_image"/>
 
-        <div class="container2">
-            <form class="formEditImg" method="POST" action="index.php?action=updateSliderImages&amp;id=<?= $image['id'] ?>" enctype="multipart/form-data">
+        <br>
+                    
+        <label for="grande_image">Grande image: </label>
+        <input type="file" id="grande_image" name="grande_image"/>
+                    
+        <br />
 
-                <label for="slide">Slide : </label>
-                <input type="file" id="slide" name="slide"/>
+        <input class="button1" type="submit" name="upload" value="Ajoutez une image" />
+    </form>                
 
-                <br>
-
-                <input class="button1" type="submit" name="upload" value="Changez l'image" />
-            </form>
-        </div>
-    </section>   
+    </section>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">

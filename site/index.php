@@ -160,13 +160,48 @@ try
             $user->updateImage($_FILES['petite_image'], $_FILES['grande_image'], $_GET['id']);
             break;
 
+            case "showEditSlider":
+            $user->showEditSlider();
+            break;
+
             case "showFormEditSlider":
-            $user->showFormEditSlider();
+            if(!empty($_GET['id']) && $_GET['id'] > 0)
+            {
+            $user->showFormEditSlider($_GET['id']);
+            }
+            else {
+                throw new Exception('Aucune image sélectionnée');
+            }
             break;
 
             case "updateSliderImages":
-            $user->updateSliderImages($_FILES['premiere_slide'], $_FILES['deuxieme_slide'], $_FILES['troisieme_slide'], $_FILES['quatrieme_slide']);
+            $user->updateSliderImages($_FILES['slide'], $_GET['id']);
             break;
+
+            case "viewAddImage":
+            $user->viewAddImage();
+            break;
+
+            case "createImagePortfolio":
+            $user->createImagePortfolio($_FILES['petite_image'], $_FILES['grande_image']);
+            break;
+
+            case "deleteImagesPortfolio":
+            $user->deleteImagesPortfolio($_GET['id']);
+            break;
+
+            case "viewAddSlide":
+            $user->viewAddSlide();
+            break;
+
+            case "createImageSlider":
+            $user->createImageSlider($_FILES['slide']);
+            break;
+
+            case "deleteImagesSlider":
+            $user->deleteImagesSlider($_GET['id']);
+            break;
+
         }
     }
 }

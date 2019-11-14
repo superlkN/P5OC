@@ -12,7 +12,7 @@
                 <a class="nav-link active" href="index.php?action=showPresentation">Présentation</a>
                 <a class="nav-link active" href="index.php?action=showPortfolio">Portfolio</a>
                 <a class="nav-link active" href="index.php?action=showContact">Contact</a>
-                <?php if (isset($_SESSION['id'])) { ?>
+                <?php if (isset($_SESSION['isadmin']) && $_SESSION['isadmin'] == 1) { ?>
                 <a class="nav-link active" href="index.php?action=showDash">Dashboard</a>
                 <?php } ?>
             </nav>
@@ -20,11 +20,13 @@
             </div>
     </header>
 
-    <section>              
+    <section class="portfolio-container">              
         <div style="text-align:center">
             <h2 class="titrePres">Portfolio :</h2>
             <p>Cliquez sur une image si dessous:</p>
         </div>
+
+        <a class="boutonAdd" href="index.php?action=viewAddImage"> Ajoutez une nouvelle image </a>
                 
         <div class="container-image">
 
@@ -36,7 +38,9 @@
             <a href="assets/img/<?= $image['petite_image'] ?>">
                 <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />  
             </a>  
-            <a class="boutonImage" href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>   
+            <a class="boutonImage" href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>
+            <br>
+            <a class="boutonDelete" href="index.php?action=deleteImagesPortfolio&amp;id=<?= $image['id'] ?>">Supprimer</a>   
         </div> 
             
         <?php 
