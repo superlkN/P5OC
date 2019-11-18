@@ -412,11 +412,20 @@ input[type=submit]:hover {
   color: black;
 }
 
+#message {
+  height: 250px;
+}
+
 @media screen and (max-width: 479px) {
-  .imgPortfolio {
+  .imgDashPortfolio {
     width: 200%;
    
   }
+
+  .imgPortfolio {
+    width: 100%;
+  }
+
   .sectionPortfolio {
     margin-left: 0px;
   }
@@ -429,9 +438,14 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .imgPortfolio {
+  .imgDashPortfolio {
     width: 200%;
   }
+
+  .imgPortfolio {
+    width: 100%;
+  }
+
   .sectionPortfolio {
     margin-left: 0px;
   }
@@ -444,12 +458,22 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .imgPortfolio {
+  .imgDashPortfolio {
     width: 200%;
   }
+
+  .imgPortfolio {
+    width: 100%;
+  }
+
   .sectionPortfolio {
     margin-left: 0px;
   }
+
+  .imgPortfolio {
+    width: 100%;
+  }
+
   .imgSlider {
     width: 100%;
     height: auto;

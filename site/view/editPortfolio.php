@@ -35,7 +35,7 @@
     
         <div class="imagesDash">     
             <a href="assets/img/<?= $image['petite_image'] ?>">
-                <img class="imgPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />  
+                <img class="imgDashPortfolio" src="assets/img/<?= $image['grande_image'] ?>" />  
             </a>  
             <a class="boutonImage" href="index.php?action=showFormEditImage&amp;id=<?= $image['id'] ?>">Update</a>
             <br>
