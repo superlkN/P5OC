@@ -2,7 +2,6 @@
 
 <?php ob_start(); ?>
 <body onload="initMap()">
-  <img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
   <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
           <div class="inner">
@@ -23,7 +22,7 @@
         <main role="main" class="inner cover">
         <div class="container2">
           <h2>Contactez nous :</h2>
-          <form method="post" action="index.php?action=formEmail">
+          <form class="formContact" method="post" action="index.php?action=formEmail">
               <label for="name">Nom:</label>
               <input type="text" name="name" id="name" required placeholder="Nom" />
             

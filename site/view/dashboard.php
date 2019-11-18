@@ -1,7 +1,6 @@
 <?php $title = 'Dashboard'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">

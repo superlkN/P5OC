@@ -16,6 +16,9 @@
         <script src="assets/lib/lg-fullscreen.min.js"></script>
         <script src="https://cdn.tiny.cloud/1/p1632rvcw2rh9bc125ms6z0r3orl6lk9okglbsymh0bsgt6y/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
         <link href="<?php echo ASSETS;?>style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=768" />
+        <meta name="viewport" content="width=479" />
+        <meta name="viewport" content="width=1024" />
          
     </head>
         

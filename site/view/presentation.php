@@ -1,7 +1,6 @@
 <?php $title = 'Présentation'; ?>
 
 <?php ob_start(); ?>
-<img class="logo" width="100" height="100" src="assets/img/logo.png" alt="logo entreprise">
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
             <div class="inner">
@@ -23,7 +22,7 @@
 
         <h2> Présentation : </h2>
 
-        <iframe width="1200px" height="600px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        <iframe width="950px" height="600px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 
         <p> 
             <?= $text2['content'] ?>

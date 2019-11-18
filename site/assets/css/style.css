@@ -113,6 +113,10 @@ body {
 /* form */ 
 
 form {
+  color: white;
+}
+
+.formContact {
   color: black;
 }
 
@@ -182,6 +186,7 @@ input[type=submit]:hover {
 .presentation {
   margin-top: 100px;
   margin-bottom: 100px;
+  margin-left: 10px;
 }
 
 .map {
@@ -219,7 +224,7 @@ input[type=submit]:hover {
 }
 
 .formEdit {
-  width: 1200px;
+  width: 950px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -233,7 +238,7 @@ input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
   height: 100px;
-  width: 1200px;
+  width: 950px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,7 +298,7 @@ input[type=submit]:hover {
 /* Slider */
 
 .container3 {
-  max-width: 60em;
+  max-width: 950px;
   height: auto;
   position: relative;
   margin: auto;
@@ -397,4 +402,56 @@ input[type=submit]:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.sectionPortfolio {
+  margin-left: 60px;
+}
+
+.formAddImg {
+  color: black;
+}
+
+@media screen and (max-width: 479px) {
+  .imgPortfolio {
+    width: 200%;
+   
+  }
+  .sectionPortfolio {
+    margin-left: 0px;
+  }
+
+  .imgSlider {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .imgPortfolio {
+    width: 200%;
+  }
+  .sectionPortfolio {
+    margin-left: 0px;
+  }
+  
+  .imgSlider {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .imgPortfolio {
+    width: 200%;
+  }
+  .sectionPortfolio {
+    margin-left: 0px;
+  }
+  .imgSlider {
+    width: 100%;
+    height: auto;
+  }
 }
