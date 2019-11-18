@@ -1,4 +1,4 @@
-<?php $title = 'Portfolio'; ?>
+<?php $title = 'Slider'; ?>
 
 <?php ob_start(); ?>
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
@@ -19,14 +19,20 @@
             </div>
     </header>
 
-    <section>              
+    <section class="container-slider">              
         <div style="text-align:center">
             <h2 class="titrePres">Slider :</h2>
         </div>
 
-        <a class="boutonAdd" href="index.php?action=viewAddSlide"> Ajoutez une nouvelle slide </a>
+        <br>
+        <br>
 
-        <div class="container-image">
+        <a class="boutonAdd2" href="index.php?action=viewAddSlide"> Ajoutez une nouvelle slide </a>
+
+        <br>
+        <br>
+
+        <div class="container-image2">
                 
         <?php while ($image = $images->fetch())
         {

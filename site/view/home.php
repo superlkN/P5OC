@@ -17,7 +17,7 @@
             </nav>
             
             </div>
-</header>
+    </header>
 
     <section id="slider">
         <div class="container3">
@@ -92,7 +92,7 @@
         
     </section>
 
-    <div class="presentation">
+    <div class="presentation-home">
         <h2> Bienvenue sur le site web de la Menuiserie Quellard : </h2>
 
         <p> 

@@ -19,7 +19,7 @@
             </div>
     </header>
 
-    <section>              
+    <section class="container-portfolio">              
         <div style="text-align:center">
             <h2 class="titrePres">Portfolio :</h2>
             <p>Cliquez sur une image si dessous:</p>

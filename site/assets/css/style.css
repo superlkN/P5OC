@@ -190,17 +190,17 @@ input[type=submit]:hover {
 }
 
 .map {
-  height: 500px;
+  height: 700px;
   width: 100%;
   margin-bottom: 100px;
 }
 
 .connexion {
-  width: 75em;
+  width: 1000px;
 }
 
 .inscription {
-  width: 75em;
+  width: 1000px;
 }
 
 .titrePres {
@@ -224,7 +224,7 @@ input[type=submit]:hover {
 }
 
 .formEdit {
-  width: 950px;
+  width: 1000px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -238,7 +238,7 @@ input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
   height: 100px;
-  width: 950px;
+  width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,6 +253,15 @@ input[type=submit]:hover {
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.container-image2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: 10px;
 }
 
 .imagesDash {
@@ -274,7 +283,7 @@ input[type=submit]:hover {
 .boutonDelete {
   position: relative;
   color: white;
-  top: 20px;
+  top: 27px;
   left: 120px;
   background-color: #333;
   padding: 12px 20px;
@@ -298,7 +307,7 @@ input[type=submit]:hover {
 /* Slider */
 
 .container3 {
-  max-width: 950px;
+  max-width: 1000px;
   height: auto;
   position: relative;
   margin: auto;
@@ -404,6 +413,16 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
+.boutonAdd2 {
+  position: relative;
+  color: white;
+  background-color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .sectionPortfolio {
   margin-left: 60px;
 }
@@ -416,30 +435,18 @@ input[type=submit]:hover {
   height: 250px;
 }
 
-@media screen and (max-width: 479px) {
-  .imgDashPortfolio {
-    width: 200%;
-   
-  }
-
-  .imgPortfolio {
-    width: 100%;
-  }
-
-  .sectionPortfolio {
-    margin-left: 0px;
-  }
-
-  .imgSlider {
-    width: 100%;
-    height: auto;
-  }
-
-}
 
 @media screen and (max-width: 1024px) {
+
+  body {
+    font-size: 30px;
+  }
   .imgDashPortfolio {
     width: 200%;
+  }
+
+  .imagesDash {
+  	padding: 0;
   }
 
   .imgPortfolio {
@@ -448,34 +455,76 @@ input[type=submit]:hover {
 
   .sectionPortfolio {
     margin-left: 0px;
+    margin-top: 300px;
   }
   
   .imgSlider {
     width: 100%;
     height: auto;
   }
+
+  .masthead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .masthead-brand {
+    width: 100%;
+    font-size: 80px;
+  }
+
+  .nav-masthead {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  #slider {
+  	margin-top: 300px;
+  }
+
+  .container2 {
+  	margin-top: 300px;
+  }
+
+  .container-image {
+  	margin-top: 200px;
+  	margin-left: 0px;
+  }
+
+  .presentation {
+  	margin-top: 300px;
+  }
+
+  .presentation-home {
+  	margin-top: 100px;
+  	margin-bottom: 100px;
+  }
+
+  .container-portfolio {
+  	margin-top: 300px;
+  }
+
+  .boutonDelete {
+  	top: -25px;
+  	left: 0px;
+  }
+
+  .boutonDelete2 {
+  	top: -25px;
+  	left: 0px;
+  }
+
+  .boutonAdd {
+  	top: 120px;
+  }
+
+  .boutonAdd2 {
+  	margin-bottom: 100px;
+  }
+
+  .container-slider {
+  	margin-top: 300px;
+  }
   
-}
-
-@media screen and (max-width: 768px) {
-  .imgDashPortfolio {
-    width: 200%;
-  }
-
-  .imgPortfolio {
-    width: 100%;
-  }
-
-  .sectionPortfolio {
-    margin-left: 0px;
-  }
-
-  .imgPortfolio {
-    width: 100%;
-  }
-
-  .imgSlider {
-    width: 100%;
-    height: auto;
-  }
 }
