@@ -435,6 +435,11 @@ input[type=submit]:hover {
   height: 250px;
 }
 
+.presentation-home {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 
 @media screen and (max-width: 1024px) {
 
