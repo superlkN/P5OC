@@ -36,59 +36,9 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-            <br>
+        <br>
 
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
-        <script>
-
-            var slideIndex = 1;
-            showSlides(slideIndex); //fonction d'appel
-
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("slides");
-            var dots = document.getElementsByClassName("dot");
-            
-            // Passer de la diapositive 3 à la diapositive 1
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            
-            // Basculer de la diapositive 1 à la diapositive 3
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            
-            
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
-
-        </script>
+        <div id="myDots" style="text-align:center"></div>
         
     </section>
 
@@ -127,6 +77,8 @@
         <?php } ?>
     </footer>
 </div>
+
+<script src="assets/js/slider.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

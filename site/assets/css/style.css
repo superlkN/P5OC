@@ -383,6 +383,7 @@ input[type=submit]:hover {
 
 .formEditImg {
   width: 55em;
+  color: black;
 }
 
 .imgSlider {

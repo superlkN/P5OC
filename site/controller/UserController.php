@@ -357,7 +357,6 @@ class UserController
             
             header('refresh:2;url=index.php?action=showDash');
             echo "Le fichier a bien été uploadé";
-            exit;
 
             return $name_file;
         }

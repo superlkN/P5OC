@@ -19,7 +19,7 @@ define('ASSETS', HOST.'assets/css/');
 
 define("DBDRIVER", "mysql");
 define("DBHOST", "localhost");
-define("DBNAME", "P5OC");
+define("DBNAME", "p5oc");
 define("DBCHARSET", "utf8");
 define("DBUSER", "root");
 define("DBPASSWD", "");
