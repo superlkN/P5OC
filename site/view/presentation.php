@@ -17,12 +17,11 @@
             </div>
     </header>
 
-    <section>               
-        <div class="presentation">
+    <section class="presentation">               
 
         <h2> Présentation : </h2>
 
-        <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 
         <p> 
             <?= $text2['content'] ?>
@@ -30,7 +29,6 @@
 
         <img class="logoRGE" width="100" height="100" src="assets/img/rge.png" alt="logo RGE">
 
-        </div>
     </section> 
 
     <footer class="mastfoot mt-auto">

@@ -17,7 +17,7 @@
             </div>
     </header>
 
-    <section>
+    <section class="dashboard">
 
     <a class="buttonDash" href="index.php?action=viewText1">Modifier le texte de la page d'accueil</a>
 
