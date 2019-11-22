@@ -173,7 +173,7 @@ input[type=submit]:hover {
   margin-top: 70px;
   margin-bottom: 100px;
   color: black;
-  max-width: 65em;
+  width: 1000px;
 }
 
 /* Fin du form */
@@ -239,7 +239,7 @@ input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
   height: 100px;
-  width: 100%;
+  width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -495,7 +495,11 @@ input[type=submit]:hover {
   }
 
   .container2 {
-  	margin-top: 300px;
+    margin-top: 200px;
+    width: 100%;
+    padding: 0;
+    height: 300px;
+
   }
 
   .container-image {
@@ -514,16 +518,16 @@ input[type=submit]:hover {
   }
 
   .container-portfolio {
-  	margin-top: 300px;
+  	margin-top: 150px;
   }
 
   .boutonDelete {
-  	top: -25px;
+  	top: -4px;
   	left: 0px;
   }
 
   .boutonDelete2 {
-  	top: -25px;
+  	top: -4px;
   	left: 0px;
   }
 
@@ -536,7 +540,7 @@ input[type=submit]:hover {
   }
 
   .container-slider {
-  	margin-top: 300px;
+  	margin-top: 150px;
   }
 
   .connexion {
@@ -555,5 +559,30 @@ input[type=submit]:hover {
   .formEdit {
     margin-top: 200px;
   }
+
+  .buttonDash {
+    width: 100%;
+  }
   
+  .imagesDash {
+    margin-bottom: 30px;
+  }
+
+  .boutonImage {
+    right: 0;
+    left: 150px;
+    top: 20px;
+  }
+
+  .boutonImageSlider {
+    right: 0;
+    top: 20px;
+    left: 150px;
+  }
+
+  .formAddImg {
+  	position: relative;
+  	top: 30%;
+  	left: 20px;
+  }
 }
