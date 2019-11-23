@@ -24,7 +24,7 @@
             <h2 class="titrePres">Slider :</h2>
         </div>
 
-        <div class="container2">
+        <div class="container4">
             <form class="formEditImg" method="POST" action="index.php?action=updateSliderImages&amp;id=<?= $image['id'] ?>" enctype="multipart/form-data">
 
                 <label for="slide">Slide : </label>

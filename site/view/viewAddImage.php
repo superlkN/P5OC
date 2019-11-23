@@ -20,7 +20,7 @@
     </header>
 
     <section>              
-        <div class="container2">  
+        <div class="container4">  
             <form class="formAddImg formEdit" method="POST" action="index.php?action=createImagePortfolio" enctype="multipart/form-data">
                 <label for="petite_image">Petite image: </label>
                 <input type="file" id="petite_image" name="petite_image"/>

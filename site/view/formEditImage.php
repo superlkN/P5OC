@@ -25,7 +25,7 @@
             <p>Cliquez sur une image si dessous:</p>
         </div>
 
-        <div class="container2">
+        <div class="container4">
         <form class="formEditImg" method="POST" action="index.php?action=updateImage&amp;id=<?= $image['id'] ?>" enctype="multipart/form-data">
 
             <label for="petite_image">Petite image: </label>

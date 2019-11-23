@@ -20,7 +20,7 @@
     </header>
 
     <section>              
-        <div class="container2">
+        <div class="container4">
             <form class="formAddImg formEdit" method="POST" action="index.php?action=createImageSlider" enctype="multipart/form-data">
                 <label for="slide">Slide : </label>
                 <input type="file" id="slide" name="slide"/>
