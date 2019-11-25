@@ -19,8 +19,6 @@
 
     <section class="presentation">               
 
-        <h2> Présentation : </h2>
-
         <iframe class="video" src="https://www.youtube.com/embed/QhEVJsph5-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 
         <p> 

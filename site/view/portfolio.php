@@ -21,8 +21,7 @@
 
     <section class="sectionPortfolio">               
         <div style="text-align:center">
-            <h2 class="titrePres">Portfolio :</h2>
-            <p>Cliquez sur une image si dessous:</p>
+            <h3>Cliquez sur une image ci dessous:</h3>
         </div>
 
         <div id="lightgallery" class="portfolio">
