@@ -32,8 +32,8 @@
             }
             ?>
             
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" id="prev">&#10094;</a>
+            <a class="next" id="next">&#10095;</a>
         </div>
 
         <br>
